@@ -32,4 +32,14 @@ describe('Button', () => {
     fireEvent.click(button);
     expect(handleClick).toHaveBeenCalled();
   });
+
+  it('should NOT handle the onClick event if disabled', () => {
+    const handleClick = jest.fn();
+    const { getByText } = render(
+      <Button disabled label="Test Button" onClick={handleClick} />
+    );
+    const button = getByText('Test Button');
+    fireEvent.click(button);
+    expect(handleClick).not.toHaveBeenCalled();
+  });
 });

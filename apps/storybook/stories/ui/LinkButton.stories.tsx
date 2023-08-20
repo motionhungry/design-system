@@ -17,6 +17,10 @@ export default {
       options: ['none', 'low', 'mid', 'high'],
       control: { type: 'radio' },
     },
+    disabled: {
+      options: [true, false],
+      control: { type: 'radio' },
+    },
   },
 };
 
@@ -24,6 +28,9 @@ const defaultArgs = {
   href: 'https://motionhungry.com',
   label: 'Click Me',
   variant: 'primary',
+  size: 'medium',
+  elevation: 'none',
+  disabled: false,
 };
 
 export const Small = {
@@ -51,5 +58,12 @@ export const WithElevation = {
   args: {
     ...defaultArgs,
     elevation: 'mid',
+  },
+};
+
+export const Disabled = {
+  args: {
+    ...defaultArgs,
+    disabled: true,
   },
 };

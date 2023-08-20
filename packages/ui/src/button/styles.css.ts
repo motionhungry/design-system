@@ -8,23 +8,32 @@ const insetShadow = '0px 0px 0px 2px rgba(255, 255, 255, 0.15) inset';
 
 export const styles = recipe({
   base: {
-    background: buttonVars.primary.default.background,
     border: 0,
     borderRadius: themeVars.borderRadius.medium,
     color: themeVars.palette.neutral.white,
     display: 'inline-block',
     fontFamily: themeVars.fontFamily,
     textDecoration: 'none',
-
-    ':hover': {
-      background: buttonVars.primary.hover.background,
-    },
-
-    ':active': {
-      background: buttonVars.primary.active.background,
-    },
   },
   variants: {
+    disabled: {
+      true: {
+        background: buttonVars.primary.disabled.background,
+        color: buttonVars.primary.disabled.color,
+        pointerEvents: 'none',
+      },
+      false: {
+        background: buttonVars.primary.default.background,
+
+        ':hover': {
+          background: buttonVars.primary.hover.background,
+        },
+
+        ':active': {
+          background: buttonVars.primary.active.background,
+        },
+      },
+    },
     elevation: {
       none: {
         boxShadow: `${insetShadow}`,

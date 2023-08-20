@@ -15,6 +15,7 @@ const button = {
   default: { ...buttonState },
   hover: { ...buttonState },
   active: { ...buttonState },
+  disabled: { ...buttonState },
 };
 
 export const themeVars = createThemeContract({

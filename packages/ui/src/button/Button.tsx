@@ -5,6 +5,7 @@ type ButtonProps = ButtonBaseProps & { onClick?: () => {} };
 
 export const Button = ({
   elevation = 'none',
+  disabled = false,
   label,
   onClick,
   size = 'medium',
@@ -13,9 +14,10 @@ export const Button = ({
   <button
     className={styles({
       elevation,
+      disabled,
       size,
     })}
-    onClick={onClick}
+    onClick={disabled ? undefined : onClick}
   >
     {label}
   </button>
