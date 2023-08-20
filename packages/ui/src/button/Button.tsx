@@ -4,6 +4,7 @@ import { ButtonBaseProps } from './types';
 type ButtonProps = ButtonBaseProps & { onClick?: () => {} };
 
 export const Button = ({
+  elevation = 'none',
   label,
   onClick,
   size = 'medium',
@@ -11,6 +12,7 @@ export const Button = ({
 }: ButtonProps) => (
   <button
     className={styles({
+      elevation,
       size,
     })}
     onClick={onClick}

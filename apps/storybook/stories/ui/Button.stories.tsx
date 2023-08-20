@@ -14,6 +14,10 @@ export default {
       control: { type: 'radio' },
     },
     onClick: { action: 'clicked' },
+    elevation: {
+      options: ['none', 'low', 'mid', 'high'],
+      control: { type: 'radio' },
+    },
   },
 };
 
@@ -40,5 +44,12 @@ export const Large = {
   args: {
     ...defaultArgs,
     size: 'large',
+  },
+};
+
+export const WithElevation = {
+  args: {
+    ...defaultArgs,
+    elevation: 'mid',
   },
 };

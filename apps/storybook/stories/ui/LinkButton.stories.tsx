@@ -13,6 +13,10 @@ export default {
       options: ['small', 'medium', 'large'],
       control: { type: 'radio' },
     },
+    elevation: {
+      options: ['none', 'low', 'mid', 'high'],
+      control: { type: 'radio' },
+    },
   },
 };
 
@@ -40,5 +44,12 @@ export const Large = {
   args: {
     ...defaultArgs,
     size: 'large',
+  },
+};
+
+export const WithElevation = {
+  args: {
+    ...defaultArgs,
+    elevation: 'mid',
   },
 };

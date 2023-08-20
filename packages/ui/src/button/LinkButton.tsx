@@ -8,6 +8,7 @@ type LinkButton = {
 };
 
 export const LinkButton = ({
+  elevation = 'low',
   href,
   label,
   size = 'medium',
@@ -16,6 +17,7 @@ export const LinkButton = ({
   <a
     href={href}
     className={styles({
+      elevation,
       size,
     })}
   >
