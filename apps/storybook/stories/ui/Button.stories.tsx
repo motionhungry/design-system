@@ -53,3 +53,10 @@ export const WithElevation = {
     elevation: 'mid',
   },
 };
+
+export const Disabled = {
+  args: {
+    ...defaultArgs,
+    disabled: true,
+  },
+};
