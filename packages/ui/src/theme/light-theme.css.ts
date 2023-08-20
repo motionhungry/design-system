@@ -54,11 +54,11 @@ export const lightThemeClass = createTheme(themeVars, {
     button: {
       primary: {
         default: {
-          background: `linear-gradient(135deg, ${defaultPalette.purple[100]} 0%, ${defaultPalette.pink[100]} 70%)`,
+          background: `linear-gradient(135deg, ${defaultPalette.purple[100]} 0%, ${defaultPalette.pink[100]} 100%)`,
           color: defaultPalette.neutral.white,
         },
         hover: {
-          background: `linear-gradient(135deg, ${defaultPalette.purple[100]} 0%, ${defaultPalette.pink[100]} 100%)`,
+          background: `linear-gradient(135deg, ${defaultPalette.purple[100]} 0%, ${defaultPalette.pink[100]} 70%)`,
           color: defaultPalette.neutral.white,
         },
         active: {

@@ -5,9 +5,12 @@ import { LinkButton } from './LinkButton';
 describe('LinkButton', () => {
   const setup = () => {
     const utils = render(
-      <LinkButton href="https://www.motionhungry.com" label="Test Button" />
+      <LinkButton
+        href="https://www.motionhungry.com"
+        label="Test Link Button"
+      />
     );
-    const button = utils.getByText('Test Button');
+    const button = utils.getByText('Test Link Button');
     return {
       button,
       ...utils,
@@ -26,6 +29,6 @@ describe('LinkButton', () => {
 
   it('should have a label', () => {
     const { button } = setup();
-    expect(button.textContent).toEqual('Test Button');
+    expect(button.textContent).toEqual('Test Link Button');
   });
 });

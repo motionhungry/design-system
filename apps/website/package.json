@@ -1,0 +1,29 @@
+{
+  "name": "@motionhungry/website",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "clean": "pnpm rimraf .turbo .next node_modules",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "lint:fix": "next lint --fix"
+  },
+  "dependencies": {
+    "@motionhungry/ui": "workspace:*",
+    "@motionhungry/icons": "workspace:*",
+    "next": "^13.4.16",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@motionhungry/tsconfig": "workspace:*",
+    "@types/node": "^17.0.12",
+    "@types/react": "^18.0.22",
+    "@types/react-dom": "^18.0.7",
+    "dotenv-cli": "^7.2.1",
+    "eslint-config-custom": "workspace:*",
+    "typescript": "^5.1.6"
+  }
+}

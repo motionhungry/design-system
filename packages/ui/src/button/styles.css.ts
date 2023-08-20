@@ -7,6 +7,7 @@ const { button: buttonVars } = themeVars.components;
 export const styles = recipe({
   base: {
     background: buttonVars.primary.default.background,
+    border: 0,
     borderRadius: themeVars.borderRadius.medium,
     boxShadow: `0px 0px 0px 2px rgba(255, 255, 255, 0.15) inset, ${themeVars.elevation.mid}`,
     color: themeVars.palette.neutral.white,
