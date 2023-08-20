@@ -1,0 +1,13 @@
+{
+  "transform": {
+    "\\.css\\.ts$": "@vanilla-extract/jest-transform"
+  },
+  "testMatch": [
+    "**/?(*.)+(spec|test).[jt]s?(x)"
+  ],
+  "preset": "ts-jest",
+  "testEnvironment": "jsdom",
+  "setupFilesAfterEnv": [
+    "<rootDir>/src/setupTests.ts"
+  ]
+}

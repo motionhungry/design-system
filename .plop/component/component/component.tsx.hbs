@@ -1,0 +1,15 @@
+import { MarginProps } from 'styled-system';
+
+type {{ name }}Props = {
+  someProp: string;
+} & MarginProps;
+
+const {{ name }} = ({ someProp, ...props }: {{ name }}Props): JSX.Element => {
+  return (
+    <div {...props}>{someProp}</div>
+  );
+};
+
+{{ name }}.displayName = '{{ name }}';
+
+export { {{ name }} };
