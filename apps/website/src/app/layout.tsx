@@ -1,19 +1,17 @@
-'use client';
+import '../../node_modules/@motionhungry/ui/dist/style.css';
 
 import { lightThemeClass } from '@motionhungry/ui';
 import localFont from 'next/font/local';
-import { usePathname, useRouter } from 'next/navigation';
-import { useState } from 'react';
 
 const gotham = localFont({
   src: [
     {
-      path: '../fonts/Gotham-Book.otf',
+      path: '../../node_modules/@motionhungry/ui/dist/fonts/Gotham-Book.otf',
       weight: '400',
       style: 'normal',
     },
     {
-      path: '../fonts/Gotham-Medium.otf',
+      path: '../../node_modules/@motionhungry/ui/dist/fonts/Gotham-Medium.otf',
       weight: '500',
       style: 'normal',
     },
