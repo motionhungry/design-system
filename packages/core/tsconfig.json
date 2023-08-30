@@ -1,3 +1,3 @@
 {
-  "extends": "@motionhungry/style-policy/tsconfig/react.json"
+  "extends": "@motionhungry/style-policy/tsconfig/react.json",
 }
