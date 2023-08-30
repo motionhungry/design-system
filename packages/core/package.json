@@ -1,6 +1,6 @@
 {
   "name": "@motionhungry/ui-core",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "description": "",
   "keywords": [],
   "license": "ISC",
@@ -20,6 +20,7 @@
     "test": "jest"
   },
   "dependencies": {
+    "@motionhungry/style-policy": "1.1.0-next.6",
     "@vanilla-extract/css": "^1.12.0",
     "@vanilla-extract/sprinkles": "^1.6.1",
     "@vitejs/plugin-react": "^4.0.4",
@@ -32,7 +33,6 @@
     "@babel/preset-env": "^7.22.10",
     "@babel/preset-react": "^7.22.5",
     "@babel/preset-typescript": "^7.22.5",
-    "@motionhungry/style-policy": "next",
     "@testing-library/jest-dom": "^6.0.1",
     "@testing-library/react": "^14.0.0",
     "@types/jest": "^29.5.3",

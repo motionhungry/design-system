@@ -1,6 +1,6 @@
 {
   "name": "@motionhungry/icons",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "description": "",
   "keywords": [],
   "license": "ISC",
@@ -23,7 +23,7 @@
     "styled-system": "^5.1.5"
   },
   "devDependencies": {
-    "@motionhungry/style-policy": "next",
+    "@motionhungry/style-policy": "1.1.0-next.6",
     "@types/react": "^18.2.14",
     "@types/styled-system": "^5.1.16",
     "prop-types": "^15.8.1",
