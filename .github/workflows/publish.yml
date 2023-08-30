@@ -1,0 +1,56 @@
+name: Publish
+
+on:
+  push:
+    branches:
+      - master
+
+concurrency: ${{ github.workflow }}-${{ github.ref }}
+
+jobs:
+  publish:
+    name: Publish
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out
+        uses: actions/checkout@v3
+        with:
+          persist-credentials: false
+
+      - name: Install
+        uses: ./.github/composite-actions/install
+
+      - name: Set Github User
+        run: |
+          /usr/bin/git config user.name "motionhungry-ci"
+          /usr/bin/git config user.email "kyle+ci@motionhungry.com"
+
+      - name: Create Release Pull Request or Publish to npm
+        id: changesets
+        uses: changesets/action@v1
+        with:
+          publish: pnpm release
+          commit: 'release: release latest dev version'
+          title: 'release: release latest dev version'
+          setupGitUser: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.CI_PERSONAL_ACCESS_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_PUBLISH_TOKEN }}
+
+  update-dev:
+    if: ${{ github.ref == 'refs/heads/master' }}
+    needs: [publish]
+    name: Update dev
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          ref: 'dev'
+          token: ${{ secrets.CI_PERSONAL_ACCESS_TOKEN }}
+
+      - name: Back-merge master into dev
+        run: |
+          git merge --ff-only origin/master
+          git push

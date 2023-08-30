@@ -1,18 +1,14 @@
-import { useTheme } from 'styled-components';
+import { useTheme } from 'styled-components'; import { Box, Text } from
+'@motionhungry/ui'; type
+{{name}}Props = {}; const
+{{name}}
+= (props:
+{{name}}Props): JSX.Element => { const theme = useTheme(); return (
+<Box flexDirection='column' pt='{4}' px='{3}'>
+  <Text variant='h1'>{{name}}</Text>
+</Box>
+); }
 
-import { Box, Text } from '@motionhungry/ui';
-
-type {{ name }}Props = {};
-
-const {{ name }} = (props: {{ name }}Props): JSX.Element => {
-  const theme = useTheme();
-  return (
-    <Box flexDirection="column" pt={4} px={3}>
-      <Text variant="h1">{{ name }}</Text>
-    </Box>
-  );
-}
-
-{{ name }}.displayName = '{{ name }}';
-
-export { {{ name }} };
+{{name}}.displayName = '{{name}}'; export {
+{{name}}
+};

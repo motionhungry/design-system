@@ -1,7 +1,7 @@
 import { styles } from './styles.css';
-import { ButtonBaseProps } from './types';
+import type { ButtonBaseProps } from './types';
 
-type ButtonProps = ButtonBaseProps & { onClick?: () => {} };
+type ButtonProps = ButtonBaseProps & { onClick?: () => void };
 
 export const Button = ({
   elevation = 'none',
@@ -9,8 +9,7 @@ export const Button = ({
   label,
   onClick,
   size = 'medium',
-  variant = 'primary',
-}: ButtonProps) => (
+}: ButtonProps): JSX.Element => (
   <button
     className={styles({
       elevation,

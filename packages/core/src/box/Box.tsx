@@ -1,7 +1,8 @@
 import type { ElementType } from 'react';
 import { forwardRef } from 'react';
 
-import { atoms, Sprinkles } from '../style';
+import type { Sprinkles } from '../style';
+import { atoms } from '../style';
 
 type BoxProps = {
   as?: ElementType;
@@ -22,7 +23,7 @@ const Box = forwardRef(
         {children}
       </Component>
     );
-  }
+  },
 );
 
 Box.displayName = 'Box';

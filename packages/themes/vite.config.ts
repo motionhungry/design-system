@@ -5,7 +5,7 @@ import dts from 'vite-plugin-dts';
 
 import { peerDependencies } from './package.json';
 
-export default defineConfig((configEnv) => ({
+export default defineConfig(() => ({
   build: {
     lib: {
       entry: 'src/index.ts',
@@ -13,7 +13,7 @@ export default defineConfig((configEnv) => ({
       formats: ['cjs', 'es'],
     },
     rollupOptions: {
-      external: Object.keys(peerDependencies),
+      external: Object.keys(peerDependencies as Record<string, string>),
     },
   },
   plugins: [

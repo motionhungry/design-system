@@ -1,21 +1,37 @@
 {
+  "name": "motionhungry",
   "private": true,
   "scripts": {
     "build": "turbo run build",
     "clean": "turbo run clean && rimraf node_modules",
     "dev": "turbo run dev",
+    "eslint:check": "turbo run eslint:check",
+    "eslint:fix": "turbo run eslint:fix",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "lint": "turbo run lint",
-    "lint:fix": "turbo run lint:fix",
     "plop": "plop",
-    "prisma": "pnpm --filter=@motionhungry/data run prisma",
     "prepare": "husky install",
+    "prettier:check": "prettier . -c",
+    "prettier:fix": "prettier . --ignore-unknown --write",
+    "prisma": "pnpm --filter=@motionhungry/data run prisma",
+    "release": "pnpm build && pnpm changeset publish",
     "test": "turbo run test"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*": "pnpm prettier:fix",
+    "src/**/*.{js,jsx,ts,tsx}": "pnpm eslint:fix"
+  },
   "devDependencies": {
-    "@motionhungry/style-policy": "next",
+    "@changesets/cli": "^2.26.2",
+    "@commitlint/cli": "^17.7.1",
+    "@commitlint/config-conventional": "^17.7.0",
+    "@motionhungry/style-policy": "1.1.0-next.6",
     "@turbo/gen": "^1.9.7",
-    "eslint": "^7.32.0",
+    "eslint": "^8.48.0",
     "husky": "^8.0.3",
     "lint-staged": "^14.0.0",
     "plop": "^3.1.2",
@@ -23,16 +39,6 @@
     "rimraf": "^5.0.1",
     "turbo": "latest"
   },
-  "packageManager": "pnpm@7.15.0",
-  "name": "motionhungry",
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "src/**/*.{js,jsx,ts,tsx}": [
-      "turbo run lint:fix"
-    ]
-  }
+  "packageManager": "pnpm@7.15.0"
 }
+
