@@ -1,7 +1,7 @@
 import { forwardRef } from 'react';
 
 import { IconBase } from './IconBase';
-import { Icon } from './types';
+import type { Icon } from './types';
 
 const Lightning: Icon = forwardRef((props, ref) => {
   const { color, ...rest } = props;

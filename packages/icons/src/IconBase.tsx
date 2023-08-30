@@ -1,9 +1,9 @@
 import { forwardRef } from 'react';
 
-import { IconProps } from './types';
+import type { IconProps } from './types';
 
 const IconBase = forwardRef<SVGSVGElement, IconProps>((props, ref) => {
-  const { alt, size, color, children, ...rest } = props;
+  const { alt, size, children, ...rest } = props;
   return (
     <svg
       ref={ref}

@@ -9,8 +9,8 @@
     "build": "tsup src/index.ts --format esm,cjs --loader '.js=jsx' --dts --external react",
     "clean": "rimraf dist .turbo node_modules",
     "dev": "tsup src/index.ts --format esm,cjs --loader '.js=jsx' --dts --watch --external react",
-    "lint": "eslint \"src/**/*.ts*\"",
-    "lint:fix": "eslint \"src/**/*.ts*\" --fix",
+    "eslint:check": "eslint --max-warnings=0 .",
+    "eslint:fix": "eslint --fix --max-warnings=0 .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
