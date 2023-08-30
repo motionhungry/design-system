@@ -1,5 +1,5 @@
 {
-  "extends": "@motionhungry/tsconfig/nextjs.json",
+  "extends": "@motionhungry/style-policy/tsconfig/nextjs.json",
   "compilerOptions": {
     "plugins": [
       {

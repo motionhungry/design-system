@@ -17,10 +17,9 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@motionhungry/tsconfig": "workspace:*",
+    "@motionhungry/style-policy": "next",
     "@types/react": "^18.2.14",
     "@types/styled-system": "^5.1.16",
-    "eslint-config-custom": "workspace:*",
     "prop-types": "^15.8.1",
     "tsup": "^7.1.0",
     "typescript": "^5.1.6"

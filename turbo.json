@@ -21,6 +21,7 @@
     },
     "lint": {},
     "lint:fix": {},
-    "storybook": {}
+    "storybook": {},
+    "test": {}
   }
 }
