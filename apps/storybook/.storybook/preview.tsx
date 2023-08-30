@@ -1,12 +1,12 @@
 import React from 'react';
 import { Preview } from '@storybook/react';
-import { lightThemeClass } from '@motionhungry/ui';
+import { lightTheme } from '@motionhungry/ui-themes';
 
 const preview: Preview = {
   decorators: [
     (Story) => (
-      <div className={lightThemeClass}>
-        <Story className={lightThemeClass} />
+      <div className={lightTheme}>
+        <Story className={lightTheme} />
       </div>
     ),
   ],

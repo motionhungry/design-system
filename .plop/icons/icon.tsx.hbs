@@ -1,34 +1,29 @@
-import { forwardRef } from 'react';
-import { IconBase } from './IconBase';
-import { Icon } from './types';
+import { forwardRef } from 'react'; import { IconBase } from './IconBase';
+import { Icon } from './types'; const
+{{name}}: Icon = forwardRef((props, ref) => { const { color, ...rest } = props;
+return (
+<IconBase ref='{ref}' {...rest}>
+  <path
+    d='M5 7H19'
+    stroke='{color}'
+    stroke-width='2'
+    stroke-linecap='round'
+  ></path>
+  <path
+    d='M5 12H19'
+    stroke='{color}'
+    stroke-width='2'
+    stroke-linecap='round'
+  ></path>
+  <path
+    d='M5 17H19'
+    stroke='{color}'
+    stroke-width='2'
+    stroke-linecap='round'
+  ></path>
+</IconBase>
+); });
 
-const {{ name }}: Icon = forwardRef((props, ref) => {
-  const { color, ...rest } = props;
-
-  return (
-    <IconBase ref={ref} {...rest}>
-      <path
-        d="M5 7H19"
-        stroke={color}
-        stroke-width="2"
-        stroke-linecap="round"
-      />
-      <path
-        d="M5 12H19"
-        stroke={color}
-        stroke-width="2"
-        stroke-linecap="round"
-      />
-      <path
-        d="M5 17H19"
-        stroke={color}
-        stroke-width="2"
-        stroke-linecap="round"
-      />
-    </IconBase>
-  );
-});
-
-{{ name }}.displayName = '{{ name }}';
-
-export { {{ name }} };
+{{name}}.displayName = '{{name}}'; export {
+{{name}}
+};

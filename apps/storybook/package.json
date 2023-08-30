@@ -2,17 +2,25 @@
   "name": "motionhungry-storybook",
   "version": "1.0.0",
   "description": "",
+  "keywords": [],
+  "license": "ISC",
+  "author": "",
   "main": "index.js",
   "scripts": {
     "clean": "rimraf node_modules .turbo",
     "dev": "storybook dev -p 6007",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "storybook-build": "storybook build"
+    "storybook-build": "storybook build",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "dependencies": {
+    "@motionhungry/icons": "workspace:*",
+    "@motionhungry/ui": "workspace:*",
+    "@motionhungry/ui-core": "workspace:*",
+    "@motionhungry/ui-themes": "workspace:*",
+    "styled-components": "^6.0.1"
+  },
   "devDependencies": {
+    "@motionhungry/style-policy": "1.1.0-next.6",
     "@storybook/addon-essentials": "^7.0.24",
     "@storybook/addon-interactions": "^7.0.24",
     "@storybook/addon-links": "^7.0.24",
@@ -27,11 +35,6 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "storybook": "^7.0.24"
-  },
-  "dependencies": {
-    "@motionhungry/icons": "*",
-    "@motionhungry/tsconfig": "*",
-    "@motionhungry/ui": "*",
-    "styled-components": "^6.0.1"
   }
 }
+

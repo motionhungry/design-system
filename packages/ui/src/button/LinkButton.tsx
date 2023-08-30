@@ -1,5 +1,5 @@
 import { styles } from './styles.css';
-import { ButtonBaseProps } from './types';
+import type { ButtonBaseProps } from './types';
 
 type LinkButtonProps = ButtonBaseProps & { href: string };
 
@@ -13,8 +13,7 @@ export const LinkButton = ({
   href,
   label,
   size = 'medium',
-  variant = 'primary',
-}: LinkButtonProps) => (
+}: LinkButtonProps): JSX.Element => (
   <a
     href={href}
     className={styles({
