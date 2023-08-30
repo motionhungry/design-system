@@ -1,5 +1,15 @@
 # @motionhungry/ui
 
+## 0.1.1
+
+### Patch Changes
+
+- 2363407: dev release
+- 35a1d92: Another attempt at preventing motionhungry-storybook from being included in the changeset
+- Updated dependencies [2363407]
+- Updated dependencies [35a1d92]
+  - @motionhungry/ui-core@0.1.1
+
 ## 0.1.0
 
 ### Minor Changes
