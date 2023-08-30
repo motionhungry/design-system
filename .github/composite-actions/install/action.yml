@@ -26,3 +26,7 @@ runs:
       run: |
         corepack enable
         pnpm i
+
+    - name: Build packages
+      shell: bash
+      run: pnpm build
