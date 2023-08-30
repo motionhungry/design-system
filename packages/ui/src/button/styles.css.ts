@@ -1,18 +1,18 @@
 import { recipe } from '@vanilla-extract/recipes';
 
-import { themeVars } from '../theme';
+import { styleVars } from '../style';
 
-const { button: buttonVars } = themeVars.components;
+const { button: buttonVars } = styleVars.components;
 
 const insetShadow = '0px 0px 0px 2px rgba(255, 255, 255, 0.15) inset';
 
 export const styles = recipe({
   base: {
     border: 0,
-    borderRadius: themeVars.borderRadius.medium,
-    color: themeVars.palette.neutral.white,
+    borderRadius: styleVars.borderRadius.medium,
+    color: styleVars.palette.neutral.white,
     display: 'inline-block',
-    fontFamily: themeVars.fontFamily,
+    fontFamily: styleVars.fontFamily,
     textDecoration: 'none',
   },
   variants: {
@@ -39,37 +39,37 @@ export const styles = recipe({
         boxShadow: `${insetShadow}`,
       },
       low: {
-        boxShadow: `${insetShadow}, ${themeVars.elevation.low}`,
+        boxShadow: `${insetShadow}, ${styleVars.elevation.low}`,
       },
       mid: {
-        boxShadow: `${insetShadow}, ${themeVars.elevation.mid}`,
+        boxShadow: `${insetShadow}, ${styleVars.elevation.mid}`,
       },
       high: {
-        boxShadow: `${insetShadow}, ${themeVars.elevation.high}`,
+        boxShadow: `${insetShadow}, ${styleVars.elevation.high}`,
       },
     },
     size: {
       small: {
-        fontSize: themeVars.typography.button.small.fontSize,
-        fontWeight: themeVars.typography.button.small.fontWeight,
-        height: themeVars.space[5],
-        lineHeight: themeVars.space[5],
-        padding: `0 ${themeVars.space['1.5']}`,
+        fontSize: styleVars.typography.button.small.fontSize,
+        fontWeight: styleVars.typography.button.small.fontWeight,
+        height: styleVars.space[5],
+        lineHeight: styleVars.space[5],
+        padding: `0 ${styleVars.space['1.5']}`,
       },
       medium: {
-        fontSize: themeVars.typography.button.medium.fontSize,
-        fontWeight: themeVars.typography.button.medium.fontWeight,
-        height: themeVars.space[6],
-        lineHeight: themeVars.space[6],
-        padding: `0 ${themeVars.space[2]}`,
+        fontSize: styleVars.typography.button.medium.fontSize,
+        fontWeight: styleVars.typography.button.medium.fontWeight,
+        height: styleVars.space[6],
+        lineHeight: styleVars.space[6],
+        padding: `0 ${styleVars.space[2]}`,
       },
       large: {
-        borderRadius: themeVars.borderRadius.medium,
-        fontSize: themeVars.typography.button.large.fontSize,
-        fontWeight: themeVars.typography.button.large.fontWeight,
-        height: themeVars.space[7],
-        lineHeight: themeVars.space[7],
-        padding: `0 ${themeVars.space[3]}`,
+        borderRadius: styleVars.borderRadius.medium,
+        fontSize: styleVars.typography.button.large.fontSize,
+        fontWeight: styleVars.typography.button.large.fontWeight,
+        height: styleVars.space[7],
+        lineHeight: styleVars.space[7],
+        padding: `0 ${styleVars.space[3]}`,
       },
     },
   },
