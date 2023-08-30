@@ -2,9 +2,10 @@
 
 ### Apps and Packages
 
-- `ui-core`: a theme contract for [Vanilla Extract](https://vanilla-extract.style/) and a set of core React components
-- `ui`: a reusable set of React components
-- `themes`: a collection of themes
+- `packages/ui-core`: a theme contract for [Vanilla Extract](https://vanilla-extract.style/) and a set of core React components
+- `packages/ui`: a reusable set of React components
+- `packages/themes`: a collection of themes
+- `packages/storybook`: a [Storybook](https://storybook.js.org/) app
 
 ### Build
 
