@@ -12,8 +12,8 @@
     "build": "vite build",
     "clean": "rimraf dist .turbo node_modules",
     "dev": "vite build --watch",
-    "lint": "eslint \"src/**/*.ts*\"",
-    "lint:fix": "eslint \"src/**/*.ts*\" --fix",
+    "eslint:check": "eslint --max-warnings=0 .",
+    "eslint:fix": "eslint --fix --max-warnings=0 .",
     "test": "jest"
   },
   "keywords": [],
