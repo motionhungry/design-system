@@ -2,6 +2,9 @@
   "name": "@motionhungry/icons",
   "version": "0.0.1",
   "description": "",
+  "keywords": [],
+  "license": "ISC",
+  "author": "",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
@@ -13,9 +16,12 @@
     "eslint:fix": "eslint --fix --max-warnings=0 .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "dependencies": {
+    "@types/prop-types": "^15.7.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "styled-system": "^5.1.5"
+  },
   "devDependencies": {
     "@motionhungry/style-policy": "next",
     "@types/react": "^18.2.14",
@@ -23,11 +29,6 @@
     "prop-types": "^15.8.1",
     "tsup": "^7.1.0",
     "typescript": "^5.1.6"
-  },
-  "dependencies": {
-    "@types/prop-types": "^15.7.5",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "styled-system": "^5.1.5"
   }
 }
+

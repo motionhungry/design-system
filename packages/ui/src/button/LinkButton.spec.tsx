@@ -3,12 +3,12 @@ import { render } from '@testing-library/react';
 import { LinkButton } from './LinkButton';
 
 describe('LinkButton', () => {
-  const setup = () => {
+  const setup = (): { button: HTMLElement } => {
     const utils = render(
       <LinkButton
         href="https://www.motionhungry.com"
         label="Test Link Button"
-      />
+      />,
     );
     const button = utils.getByText('Test Link Button');
     return {
