@@ -11,8 +11,9 @@
     "lint:fix": "next lint --fix"
   },
   "dependencies": {
-    "@motionhungry/ui": "workspace:*",
     "@motionhungry/icons": "workspace:*",
+    "@motionhungry/ui": "workspace:*",
+    "@motionhungry/ui-themes": "workspace:*",
     "next": "^13.4.16",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"

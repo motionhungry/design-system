@@ -1,6 +1,3 @@
-import { createTheme } from '@vanilla-extract/css';
-
-import { styleVars } from '../contract.css';
 import {
   borderRadius,
   components,
@@ -8,8 +5,10 @@ import {
   fontFamily,
   palette,
   space,
+  styleVars,
   typography,
-} from '../tokens';
+} from '@motionhungry/ui-core';
+import { createTheme } from '@vanilla-extract/css';
 
 export const lightTheme = createTheme(styleVars, {
   borderRadius,

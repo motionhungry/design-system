@@ -1,5 +1,5 @@
 {
-  "name": "@motionhungry/ui",
+  "name": "@motionhungry/ui-core",
   "version": "0.0.1",
   "description": "",
   "main": "./dist/index.js",
@@ -11,7 +11,7 @@
   "scripts": {
     "build": "vite build",
     "clean": "rimraf dist .turbo node_modules",
-    "dev": "vite build --watch",
+    "dev": "pnpm build --watch",
     "lint": "eslint \"src/**/*.ts*\"",
     "lint:fix": "eslint \"src/**/*.ts*\" --fix",
     "test": "jest"
@@ -45,9 +45,7 @@
     "vite-tsconfig-paths": "^4.2.0"
   },
   "dependencies": {
-    "@motionhungry/ui-core": "workspace:*",
     "@vanilla-extract/css": "^1.12.0",
-    "@vanilla-extract/recipes": "^0.5.0",
     "@vanilla-extract/sprinkles": "^1.6.1",
     "@vitejs/plugin-react": "^4.0.4",
     "clsx": "^2.0.0",

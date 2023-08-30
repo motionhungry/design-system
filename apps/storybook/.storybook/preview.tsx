@@ -1,6 +1,6 @@
 import React from 'react';
 import { Preview } from '@storybook/react';
-import { lightTheme } from '@motionhungry/ui';
+import { lightTheme } from '@motionhungry/ui-themes';
 
 const preview: Preview = {
   decorators: [

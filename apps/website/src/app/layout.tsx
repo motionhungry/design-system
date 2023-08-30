@@ -1,6 +1,7 @@
+import '../../node_modules/@motionhungry/ui-themes/dist/style.css';
 import '../../node_modules/@motionhungry/ui/dist/style.css';
 
-import { lightThemeClass } from '@motionhungry/ui';
+import { lightTheme } from '@motionhungry/ui-themes';
 import localFont from 'next/font/local';
 
 const gotham = localFont({
@@ -24,7 +25,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html className={`${gotham.className} ${lightThemeClass}`} lang="en">
+    <html className={`${gotham.className} ${lightTheme}`} lang="en">
       <body>{children}</body>
     </html>
   );

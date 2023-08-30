@@ -1,0 +1,23 @@
+{
+  "extends": "@motionhungry/tsconfig/react-library.json",
+  "include": [
+    ".",
+    ".babelrc.js"
+  ],
+  "exclude": [
+    "dist",
+    "build",
+    "node_modules"
+  ],
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "baseUrl": "./src",
+    "paths": {
+      "@/*": [
+        "./*"
+      ]
+    },
+    "outDir": "dist"
+  }
+}

@@ -1,7 +1,7 @@
-import { Box } from '@motionhungry/ui';
+import { Box } from '@motionhungry/ui-core';
 
 export default {
-  title: 'ui/Box',
+  title: 'core/Box',
   component: Box,
   tags: ['autodocs'],
   argTypes: {
