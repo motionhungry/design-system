@@ -29,4 +29,4 @@ runs:
 
     - name: Build packages
       shell: bash
-      run: pnpm build
+      run: pnpm build --filter="./packages/*"
