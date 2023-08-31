@@ -1,7 +1,7 @@
 import { createSprinkles } from '@vanilla-extract/sprinkles';
 
-import { spaceProps } from './properties';
+import { flexProps, spaceProps } from '@/style';
 
-export const sprinkles = createSprinkles(spaceProps);
+export const sprinkles = createSprinkles(spaceProps, flexProps);
 
 export type Sprinkles = Parameters<typeof sprinkles>[0];
