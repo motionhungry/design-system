@@ -1,5 +1,11 @@
 # @motionhungry/ui-core
 
+## 0.1.2
+
+### Patch Changes
+
+- 2fbf7f5: Fix package.json to package all files in dist folder
+
 ## 0.1.1
 
 ### Patch Changes
