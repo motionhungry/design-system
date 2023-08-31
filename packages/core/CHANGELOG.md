@@ -1,5 +1,11 @@
 # @motionhungry/ui-core
 
+## 0.2.0
+
+### Minor Changes
+
+- ee8b658: Added FlexBox core component and bug fixes.
+
 ## 0.1.2
 
 ### Patch Changes
