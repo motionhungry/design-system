@@ -1,5 +1,12 @@
 # @motionhungry/ui
 
+## 0.1.3
+
+### Patch Changes
+
+- Updated dependencies [ee8b658]
+  - @motionhungry/ui-core@0.2.0
+
 ## 0.1.2
 
 ### Patch Changes
