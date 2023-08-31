@@ -16,5 +16,9 @@ export const spaceProps = defineProperties({
     pr: ['paddingRight'],
     pb: ['paddingBottom'],
     pl: ['paddingLeft'],
+    paddingX: ['paddingLeft', 'paddingRight'],
+    px: ['paddingLeft', 'paddingRight'],
+    paddingY: ['paddingTop', 'paddingBottom'],
+    py: ['paddingTop', 'paddingBottom'],
   },
 });

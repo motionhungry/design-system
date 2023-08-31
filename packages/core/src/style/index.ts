@@ -1,5 +1,4 @@
 export * from './atoms';
 export * from './contract.css';
 export * from './properties';
-export * from './sprinkles.css';
 export * from './tokens';

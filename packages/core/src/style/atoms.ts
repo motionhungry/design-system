@@ -2,18 +2,20 @@ import clsx from 'clsx';
 import type { ElementType } from 'react';
 
 import { baseReset, elementResets } from './reset.css';
-import type { Sprinkles } from './sprinkles.css';
-import { sprinkles } from './sprinkles.css';
 
 export type Atoms = {
-  reset?: ElementType;
+  sprinklesClassName: string;
   className?: string | string[];
-} & Sprinkles;
+  reset?: ElementType;
+};
 
-export const atoms = ({ reset, className, ...props }: Atoms): string => {
-  const sprinklesClassNames = sprinkles(props);
+export const atoms = ({
+  sprinklesClassName,
+  className,
+  reset,
+}: Atoms): string => {
   return clsx(
-    sprinklesClassNames,
+    sprinklesClassName,
     className,
     reset
       ? [baseReset, elementResets[reset as keyof JSX.IntrinsicElements]]

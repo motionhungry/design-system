@@ -1,20 +1,32 @@
 import type { ElementType } from 'react';
 import { forwardRef } from 'react';
 
-import type { Sprinkles } from '../style';
-import { atoms } from '../style';
+import { atoms } from '@/style';
+import { sprinkles } from './Box.sprinkles.css';
+import type { Sprinkles } from './Box.sprinkles.css';
+import { className } from './Box.styles.css';
 
-type BoxProps = {
+export type BoxProps = {
   as?: ElementType;
   children: React.ReactNode;
   className?: string;
 } & Sprinkles;
 
 const Box = forwardRef(
-  ({ as: Component = 'div', children, className, ...props }: BoxProps, ref) => {
+  (
+    {
+      as: Component = 'div',
+      children,
+      className: fwdClassName,
+      ...props
+    }: BoxProps,
+    ref,
+  ) => {
+    const sprinklesClassName = sprinkles(props);
     const newClassName = atoms({
-      className,
+      className: [className, ...(fwdClassName ? [fwdClassName] : [])],
       reset: Component,
+      sprinklesClassName,
       ...props,
     });
 
