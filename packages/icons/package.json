@@ -3,11 +3,14 @@
   "version": "0.1.1",
   "description": "",
   "keywords": [],
-  "license": "ISC",
-  "author": "",
+  "license": "MIT",
+  "author": "Kyle Getrost <kyle@motionhungry.com>",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
+  "files": [
+    "./dist/**"
+  ],
   "scripts": {
     "build": "tsup src/index.ts --format esm,cjs --loader '.js=jsx' --dts --external react",
     "clean": "rimraf dist .turbo node_modules",
