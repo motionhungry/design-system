@@ -1,5 +1,16 @@
 # @motionhungry/ui
 
+## 0.2.0
+
+### Minor Changes
+
+- 22b8cf0: Added container component and bug fixes
+
+### Patch Changes
+
+- Updated dependencies [22b8cf0]
+  - @motionhungry/ui-core@0.3.0
+
 ## 0.1.3
 
 ### Patch Changes
