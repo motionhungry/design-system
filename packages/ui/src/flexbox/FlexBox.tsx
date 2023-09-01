@@ -10,6 +10,7 @@ export type FlexBoxProps = {
 } & Sprinkles;
 
 export const FlexBox = ({
+  alignItems = 'stretch',
   as: Component = 'div',
   children,
   className: fwdClassName,
@@ -23,6 +24,7 @@ export const FlexBox = ({
     className: fwdClassName,
     reset: Component,
     sprinklesClassName: sprinkles({
+      alignItems,
       flexDirection,
       flexWrap,
       display,
