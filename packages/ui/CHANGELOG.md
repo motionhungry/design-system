@@ -1,5 +1,11 @@
 # @motionhungry/ui
 
+## 0.4.0
+
+### Minor Changes
+
+- 97ab08d: Added a text component
+
 ## 0.3.0
 
 ### Minor Changes
