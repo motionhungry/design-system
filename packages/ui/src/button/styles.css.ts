@@ -1,4 +1,4 @@
-import { styleVars } from '@motionhungry/ui-core';
+import { styleVars } from '@/style';
 import { recipe } from '@vanilla-extract/recipes';
 
 const { button: buttonVars } = styleVars.components;

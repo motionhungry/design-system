@@ -1,3 +1,9 @@
 {
-  "extends": "@motionhungry/style-policy/tsconfig/react.json"
+  "extends": "@motionhungry/style-policy/tsconfig/react.json",
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "paths": {
+      "@/*": ["./*"]
+    }
+  }
 }

@@ -1,4 +1,4 @@
-import { Box } from '@motionhungry/ui-core';
+import { Box } from '@/box';
 import { className } from './Container.styles.css';
 
 export type ContainerProps = {

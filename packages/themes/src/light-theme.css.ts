@@ -8,7 +8,7 @@ import {
   space,
   styleVars,
   typography,
-} from '@motionhungry/ui-core';
+} from '@motionhungry/ui';
 import { createTheme } from '@vanilla-extract/css';
 
 export const lightTheme = createTheme(styleVars, {
