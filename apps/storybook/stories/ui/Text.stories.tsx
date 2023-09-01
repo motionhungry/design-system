@@ -9,9 +9,21 @@ const meta: Meta<typeof Text> = {
     children: {
       control: { type: 'text' },
     },
+    as: {
+      control: 'select',
+      options: ['span', 'p', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6'],
+    },
     variant: {
       control: 'select',
       options: Object.keys(typography.fontSize),
+    },
+    fontWeight: {
+      control: 'select',
+      options: ['bold', 'semi-bold', 'medium', 'normal', 'light'],
+    },
+    textAlign: {
+      control: 'select',
+      options: ['center', 'left', 'right'],
     },
   },
 };

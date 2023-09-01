@@ -11,6 +11,10 @@ const textProperties = defineProperties({
     fontWeight: styleVars.typography.fontWeight,
     textTransform: ['uppercase', 'lowercase', 'capitalize'],
   },
+  shorthands: {
+    align: ['textAlign'],
+    transform: ['textTransform'],
+  },
 });
 
 export const sprinkles = createSprinkles(textProperties);
