@@ -1,5 +1,11 @@
 # @motionhungry/ui
 
+## 0.3.0
+
+### Minor Changes
+
+- 3b04424: Moved ui-core into ui for simplicity; added Container Block components
+
 ## 0.2.0
 
 ### Minor Changes
