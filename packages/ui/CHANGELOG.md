@@ -1,5 +1,11 @@
 # @motionhungry/ui
 
+## 0.5.2
+
+### Patch Changes
+
+- e4c4bdf: Add align items to flexbox props
+
 ## 0.5.1
 
 ### Patch Changes
