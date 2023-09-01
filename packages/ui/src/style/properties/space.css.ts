@@ -1,16 +1,7 @@
 import { defineProperties } from '@vanilla-extract/sprinkles';
 
 import { styleVars } from '@/style/contract.css';
-import { breakpoints } from '@/style/tokens';
-
-const transformBreakpoints = (): Record<string, Record<'@media', string>> =>
-  Object.entries(breakpoints).reduce(
-    (prev, [key, value]) => ({
-      ...prev,
-      [key]: { '@media': `screen and (min-width: ${value}px)` },
-    }),
-    {},
-  );
+import { transformBreakpoints } from '@/style/utils';
 
 export const spaceProps = defineProperties({
   conditions: transformBreakpoints(),
