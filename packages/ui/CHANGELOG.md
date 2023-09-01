@@ -1,5 +1,11 @@
 # @motionhungry/ui
 
+## 0.5.1
+
+### Patch Changes
+
+- b2dac40: Added backgroundColor, bgColor and color props to Block component. These are passed down to the child Box component
+
 ## 0.5.0
 
 ### Minor Changes
