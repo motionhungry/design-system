@@ -1,5 +1,16 @@
 # @motionhungry/ui-themes
 
+## 0.4.0
+
+### Minor Changes
+
+- 13da9a8: Added color palette and updated the display properties for box and flexbox components
+
+### Patch Changes
+
+- Updated dependencies [13da9a8]
+  - @motionhungry/ui@0.5.0
+
 ## 0.3.1
 
 ### Patch Changes
