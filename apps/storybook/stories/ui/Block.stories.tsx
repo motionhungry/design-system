@@ -1,5 +1,7 @@
-import { Block } from '@motionhungry/ui';
+import { Block, palette } from '@motionhungry/ui';
 import type { Meta, StoryObj } from '@storybook/react';
+
+const colors = Object.keys(palette);
 
 const meta: Meta<typeof Block> = {
   title: 'ui/Block',
@@ -10,8 +12,13 @@ const meta: Meta<typeof Block> = {
       control: { type: 'text' },
     },
     fullHeight: {},
-    backgroundImage: {
-      control: { type: 'text' },
+    backgroundColor: {
+      control: 'select',
+      options: colors,
+    },
+    color: {
+      control: 'select',
+      options: colors,
     },
   },
 };
@@ -22,7 +29,6 @@ export default meta;
 
 export const Default: Story = {
   args: {
-    backgroundImage: undefined,
     children: 'Block',
     fullHeight: false,
   },
@@ -30,16 +36,6 @@ export const Default: Story = {
 
 export const FullHeight: Story = {
   args: {
-    backgroundImage: undefined,
-    children: 'Block',
-    fullHeight: true,
-  },
-};
-
-export const BackgroundImage: Story = {
-  args: {
-    backgroundImage:
-      'https://images.unsplash.com/photo-1508138221679-760a23a2285b',
     children: 'Block',
     fullHeight: true,
   },

@@ -3,8 +3,6 @@ import { sprinkles } from '@/box/Box.sprinkles.css';
 
 export const minHeight = createVar();
 
-export const backgroundImage = createVar();
-
 export const className = style([
   sprinkles({
     py: {
