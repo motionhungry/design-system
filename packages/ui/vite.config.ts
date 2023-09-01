@@ -19,7 +19,7 @@ export default defineConfig(() => ({
   },
   plugins: [
     react(),
-    vanillaExtractPlugin({ identifiers: 'debug' }),
+    vanillaExtractPlugin({ identifiers: 'short' }),
     dts({
       include: ['src/**/'],
     }),
