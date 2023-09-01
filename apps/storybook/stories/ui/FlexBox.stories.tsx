@@ -27,6 +27,10 @@ const meta: Meta<typeof FlexBox> = {
       control: 'select',
       options: colors,
     },
+    display: {
+      control: 'select',
+      options: ['flex', 'inline-flex'],
+    },
   },
 };
 

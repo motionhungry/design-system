@@ -23,6 +23,10 @@ const meta: Meta<typeof Box> = {
       control: 'select',
       options: colors,
     },
+    display: {
+      control: 'select',
+      options: ['block', 'inline-block'],
+    },
   },
 };
 

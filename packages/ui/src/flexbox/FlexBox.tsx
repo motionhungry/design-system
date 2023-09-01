@@ -2,7 +2,6 @@ import { atoms } from '@/style';
 
 import { sprinkles } from './FlexBox.sprinkles.css';
 import type { Sprinkles } from './FlexBox.sprinkles.css';
-import { className } from './FlexBox.styles.css';
 
 export type FlexBoxProps = {
   as?: React.ElementType;
@@ -13,25 +12,27 @@ export type FlexBoxProps = {
 export const FlexBox = ({
   as: Component = 'div',
   children,
+  className: fwdClassName,
+  display = 'flex',
   flexDirection = 'row',
   flexWrap = 'nowrap',
   justifyContent = 'flex-start',
   ...props
 }: FlexBoxProps): JSX.Element => {
-  const sprinklesClassName = sprinkles({
-    flexDirection,
-    flexWrap,
-    justifyContent,
-    ...props,
-  });
-  const newClassName = atoms({
-    sprinklesClassName,
-    className,
+  const className = atoms({
+    className: fwdClassName,
     reset: Component,
+    sprinklesClassName: sprinkles({
+      flexDirection,
+      flexWrap,
+      display,
+      justifyContent,
+      ...props,
+    }),
   });
 
   return (
-    <Component className={newClassName} {...props}>
+    <Component className={className} {...props}>
       {children}
     </Component>
   );
