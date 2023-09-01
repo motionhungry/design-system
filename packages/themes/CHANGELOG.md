@@ -1,5 +1,12 @@
 # @motionhungry/ui-themes
 
+## 0.4.2
+
+### Patch Changes
+
+- Updated dependencies [e4c4bdf]
+  - @motionhungry/ui@0.5.2
+
 ## 0.4.1
 
 ### Patch Changes
