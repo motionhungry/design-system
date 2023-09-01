@@ -1,5 +1,7 @@
-import { Text, typography } from '@motionhungry/ui';
+import { Text, palette, typography } from '@motionhungry/ui';
 import type { Meta, StoryObj } from '@storybook/react';
+
+const colors = Object.keys(palette);
 
 const meta: Meta<typeof Text> = {
   title: 'ui/Text',
@@ -24,6 +26,14 @@ const meta: Meta<typeof Text> = {
     textAlign: {
       control: 'select',
       options: ['center', 'left', 'right'],
+    },
+    backgroundColor: {
+      control: 'select',
+      options: colors,
+    },
+    color: {
+      control: 'select',
+      options: colors,
     },
   },
 };

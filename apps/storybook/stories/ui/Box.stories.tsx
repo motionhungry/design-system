@@ -1,5 +1,7 @@
-import { Box, space } from '@motionhungry/ui';
+import { Box, palette, space } from '@motionhungry/ui';
 import type { Meta, StoryObj } from '@storybook/react';
+
+const colors = Object.keys(palette);
 
 const meta: Meta<typeof Box> = {
   title: 'ui/Box',
@@ -12,6 +14,18 @@ const meta: Meta<typeof Box> = {
     padding: {
       control: 'select',
       options: Object.keys(space),
+    },
+    backgroundColor: {
+      control: 'select',
+      options: colors,
+    },
+    color: {
+      control: 'select',
+      options: colors,
+    },
+    display: {
+      control: 'select',
+      options: ['block', 'inline-block'],
     },
   },
 };

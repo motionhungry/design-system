@@ -2,6 +2,7 @@ import { defineProperties } from '@vanilla-extract/sprinkles';
 
 export const flexProps = defineProperties({
   properties: {
+    display: ['flex', 'inline-flex'],
     flexDirection: ['row', 'column'],
     justifyContent: [
       'flex-start',

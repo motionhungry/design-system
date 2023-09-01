@@ -4,7 +4,6 @@ import { forwardRef } from 'react';
 import { atoms } from '@/style';
 import { sprinkles } from './Box.sprinkles.css';
 import type { Sprinkles } from './Box.sprinkles.css';
-import { className } from './Box.styles.css';
 
 export type BoxProps = {
   as?: ElementType;
@@ -18,22 +17,24 @@ const Box = forwardRef(
     {
       as: Component = 'div',
       children,
+      display = 'block',
       className: fwdClassName,
       style,
       ...props
     }: BoxProps,
     ref,
   ) => {
-    const sprinklesClassName = sprinkles(props);
-    const newClassName = atoms({
-      className: [className, ...(fwdClassName ? [fwdClassName] : [])],
+    const className = atoms({
+      className: fwdClassName,
       reset: Component,
-      sprinklesClassName,
-      ...props,
+      sprinklesClassName: sprinkles({
+        display: display ?? 'block',
+        ...props,
+      }),
     });
 
     return (
-      <Component className={newClassName} style={style} ref={ref}>
+      <Component className={className} style={style} ref={ref}>
         {children}
       </Component>
     );

@@ -8,6 +8,7 @@ export const Text = ({
   as,
   variant = 'body-medium',
   children,
+  color = 'neutral.950',
   fontWeight: fontWeightOverride,
   ...props
 }: TextProps): JSX.Element => {
@@ -23,7 +24,7 @@ export const Text = ({
   const className = atoms({
     className: [],
     reset: Component,
-    sprinklesClassName: sprinkles({ fontSize, fontWeight, ...props }),
+    sprinklesClassName: sprinkles({ color, fontSize, fontWeight, ...props }),
   });
 
   return <Component className={className}>{children}</Component>;
