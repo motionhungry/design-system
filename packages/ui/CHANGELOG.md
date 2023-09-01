@@ -1,5 +1,11 @@
 # @motionhungry/ui
 
+## 0.5.3
+
+### Patch Changes
+
+- c391786: Fix align items forward prop
+
 ## 0.5.2
 
 ### Patch Changes
