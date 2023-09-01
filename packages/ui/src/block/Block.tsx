@@ -1,11 +1,10 @@
 import { assignInlineVars } from '@vanilla-extract/dynamic';
 import { Box } from '@/box';
 import { Container } from '@/container';
-import { Sprinkles } from '@/box/Box.sprinkles.css';
+import type { Sprinkles } from '@/box/Box.sprinkles.css';
 import { className, minHeight } from './Block.styles.css';
 
 type BlockProps = {
-  backgroundImage?: string;
   children: React.ReactNode;
   fullHeight?: boolean;
 } & Pick<Sprinkles, 'backgroundColor' | 'bgColor' | 'color'>;
