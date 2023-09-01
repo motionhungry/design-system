@@ -15,7 +15,6 @@
   "dependencies": {
     "@motionhungry/icons": "workspace:*",
     "@motionhungry/ui": "workspace:*",
-    "@motionhungry/ui-core": "workspace:*",
     "@motionhungry/ui-themes": "workspace:*",
     "styled-components": "^6.0.1"
   },

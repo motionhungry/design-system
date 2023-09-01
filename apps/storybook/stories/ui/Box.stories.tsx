@@ -1,9 +1,9 @@
-import { FlexBox, space } from '@motionhungry/ui-core';
+import { Box, space } from '@motionhungry/ui';
 import type { Meta, StoryObj } from '@storybook/react';
 
-const meta: Meta<typeof FlexBox> = {
-  title: 'core/FlexBox',
-  component: FlexBox,
+const meta: Meta<typeof Box> = {
+  title: 'core/Box',
+  component: Box,
   tags: ['autodocs'],
   argTypes: {
     children: {
@@ -12,10 +12,6 @@ const meta: Meta<typeof FlexBox> = {
     padding: {
       control: 'select',
       options: Object.keys(space),
-    },
-    flexDirection: {
-      control: 'radio',
-      options: ['row', 'column'],
     },
   },
 };
@@ -26,8 +22,7 @@ export default meta;
 
 export const Default: Story = {
   args: {
-    children: 'Flex Box',
+    children: 'Box',
     padding: 0,
-    flexDirection: 'row',
   },
 };
