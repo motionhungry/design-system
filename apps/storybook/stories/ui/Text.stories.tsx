@@ -2,7 +2,7 @@ import { Text, typography } from '@motionhungry/ui';
 import type { Meta, StoryObj } from '@storybook/react';
 
 const meta: Meta<typeof Text> = {
-  title: 'core/Text',
+  title: 'ui/Text',
   component: Text,
   tags: ['autodocs'],
   argTypes: {

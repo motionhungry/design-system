@@ -2,7 +2,7 @@ import { FlexBox, space } from '@motionhungry/ui';
 import type { Meta, StoryObj } from '@storybook/react';
 
 const meta: Meta<typeof FlexBox> = {
-  title: 'core/FlexBox',
+  title: 'ui/FlexBox',
   component: FlexBox,
   tags: ['autodocs'],
   argTypes: {

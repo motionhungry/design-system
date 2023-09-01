@@ -2,7 +2,7 @@ import { Box, space } from '@motionhungry/ui';
 import type { Meta, StoryObj } from '@storybook/react';
 
 const meta: Meta<typeof Box> = {
-  title: 'core/Box',
+  title: 'ui/Box',
   component: Box,
   tags: ['autodocs'],
   argTypes: {
