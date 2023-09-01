@@ -1,4 +1,4 @@
-import { palette } from './palette';
+import { legacyPalette as palette } from './palette';
 
 export const components = {
   button: {

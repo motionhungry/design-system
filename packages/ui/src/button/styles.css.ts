@@ -9,7 +9,7 @@ export const styles = recipe({
   base: {
     border: 0,
     borderRadius: styleVars.borderRadius.medium,
-    color: styleVars.palette.neutral.white,
+    color: styleVars.legacyPalette.neutral.white,
     display: 'inline-block',
     fontFamily: styleVars.fontFamily,
     textDecoration: 'none',
