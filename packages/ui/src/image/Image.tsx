@@ -1,3 +1,5 @@
+import { className } from './Image.styles.css';
+
 export type ImageProps = {
   alt: string;
   width?: number;
@@ -10,5 +12,5 @@ export const Image = ({ alt, src, width, height }: ImageProps): JSX.Element => {
     width,
     height,
   };
-  return <img src={src} alt={alt} style={style} />;
+  return <img src={src} alt={alt} className={className} style={style} />;
 };

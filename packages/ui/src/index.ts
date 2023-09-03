@@ -1,3 +1,4 @@
+export * from './bg-media';
 export * from './block';
 export * from './box';
 export * from './button';

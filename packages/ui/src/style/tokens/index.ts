@@ -6,3 +6,4 @@ export * from './layout';
 export * from './palette';
 export * from './space';
 export * from './typography';
+export * from './z-index';

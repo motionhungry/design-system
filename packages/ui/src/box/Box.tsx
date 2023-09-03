@@ -1,13 +1,12 @@
 import type { ElementType } from 'react';
 import { forwardRef } from 'react';
-
 import { atoms } from '@/style';
 import { sprinkles } from './Box.sprinkles.css';
 import type { Sprinkles } from './Box.sprinkles.css';
 
 export type BoxProps = {
   as?: ElementType;
-  children: React.ReactNode;
+  children?: React.ReactNode;
   className?: string;
   style?: React.CSSProperties;
 } & Sprinkles;
