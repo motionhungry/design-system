@@ -10,3 +10,19 @@ export const containerClassName = style({
   width: '100%',
   zIndex: zIndex.backgroundImage,
 });
+
+export const videoClassName = style({
+  height: '100%',
+  objectFit: 'cover',
+  position: 'relative',
+  width: '100%',
+});
+
+export const tintClassName = style({
+  height: '100%',
+  left: 0,
+  position: 'absolute',
+  objectFit: 'cover',
+  top: 0,
+  width: '100%',
+});

@@ -2,40 +2,48 @@ import { assignInlineVars } from '@vanilla-extract/dynamic';
 import { BackgroundMedia } from '@/bg-media';
 import { Box } from '@/box';
 import { Container } from '@/container';
-import type { Sprinkles } from '@/box/Box.sprinkles.css';
+import type { Sprinkles as BoxSprinkles } from '@/box/Box.sprinkles.css';
 import { className, minHeight } from './Block.styles.css';
 
 type BlockProps = {
   backgroundImageSrc?: string;
   backgroundVideoSrc?: string;
-  backgroundVideoZoom?: number;
+  backgroundTintColor?: BoxSprinkles['backgroundColor'];
+  backgroundTintOpacity: BoxSprinkles['opacity'];
   children: React.ReactNode;
   fullHeight?: boolean;
-} & Pick<Sprinkles, 'backgroundColor' | 'bgColor' | 'color'>;
+} & Pick<BoxSprinkles, 'backgroundColor' | 'bgColor' | 'color'>;
 
 const Block = ({
+  backgroundColor,
+  backgroundTintColor,
+  backgroundTintOpacity,
+  bgColor,
   backgroundImageSrc,
   backgroundVideoSrc,
-  backgroundVideoZoom = 0,
   children,
+  color,
   fullHeight = false,
-  ...props
 }: BlockProps): JSX.Element => {
+  console.log({ backgroundColor });
   return (
     <Box
       className={className}
+      color={color}
       style={assignInlineVars({
         [minHeight]: fullHeight ? '100vh' : 'auto',
       })}
-      {...props}
     >
-      {(!!backgroundImageSrc || !!backgroundVideoSrc) && (
+      {
         <BackgroundMedia
+          backgroundColor={backgroundColor}
+          bgColor={bgColor}
           imageSrc={backgroundImageSrc}
+          tintColor={backgroundTintColor}
+          tintOpacity={backgroundTintOpacity}
           videoSrc={backgroundVideoSrc}
-          videoZoom={backgroundVideoZoom}
         />
-      )}
+      }
       <Container>{children}</Container>
     </Box>
   );

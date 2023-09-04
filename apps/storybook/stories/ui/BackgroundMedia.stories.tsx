@@ -1,5 +1,7 @@
-import { BackgroundMedia, Box, Text } from '@motionhungry/ui';
+import { BackgroundMedia, Box, palette, Text } from '@motionhungry/ui';
 import type { Meta, StoryObj } from '@storybook/react';
+
+const colors = Object.keys(palette);
 
 const meta: Meta<typeof BackgroundMedia> = {
   title: 'ui/BackgroundMedia',
@@ -19,14 +21,18 @@ const meta: Meta<typeof BackgroundMedia> = {
   ],
   tags: ['autodocs'],
   argTypes: {
+    tintColor: {
+      control: 'select',
+      options: colors,
+    },
+    tintOpacity: {
+      control: { type: 'number', min: 0, max: 100, step: 1 },
+    },
     imageSrc: {
       control: { type: 'text' },
     },
     videoSrc: {
       control: { type: 'text' },
-    },
-    videoZoom: {
-      control: { type: 'number', min: 0, max: 400, step: 10 },
     },
   },
 };
@@ -37,15 +43,24 @@ export default meta;
 
 export const Image: Story = {
   args: {
-    imageSrc: '/images/angkorwat.webp',
-    videoZoom: 0,
+    imageSrc: '/images/waterfall.jpg',
+    tintOpacity: 0,
   },
 };
 
 export const Video: Story = {
   args: {
-    imageSrc: '/images/angkorwat.webp',
-    videoSrc: 'https://player.vimeo.com/video/319326066?background=1&muted=1',
-    videoZoom: 0,
+    imageSrc: '/images/waterfall.jpg',
+    videoSrc: '/videos/lightning.mp4',
+    tintOpacity: 0,
+  },
+};
+
+export const WithTint: Story = {
+  args: {
+    imageSrc: '/images/waterfall.jpg',
+    videoSrc: '/videos/lightning.mp4',
+    tintColor: 'primary.700',
+    tintOpacity: 50,
   },
 };

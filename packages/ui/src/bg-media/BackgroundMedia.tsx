@@ -1,40 +1,48 @@
 import { Box } from '@/box';
+import type { Sprinkles as BoxSprinkles } from '@/box/Box.sprinkles.css';
 import { Image } from '@/image';
-import { containerClassName } from './BackgroundMedia.styles.css';
+import {
+  containerClassName,
+  tintClassName,
+  videoClassName,
+} from './BackgroundMedia.styles.css';
 
 export type BackgroundMedia = {
   imageSrc?: string;
   videoSrc?: string;
-  videoZoom?: number;
-};
+  tintColor?: BoxSprinkles['backgroundColor'];
+  tintOpacity?: BoxSprinkles['opacity'];
+} & Pick<BoxSprinkles, 'backgroundColor' | 'bgColor'>;
 
 const BackgroundMedia = ({
   imageSrc,
+  tintColor,
+  tintOpacity = 0,
   videoSrc,
-  videoZoom = 0,
+  ...props
 }: BackgroundMedia): JSX.Element => {
-  const topLeft = videoZoom > 0 ? `-${videoZoom / 2}%` : undefined;
-  const widthHeight = `${100 + videoZoom}%`;
   return (
-    <Box className={containerClassName}>
-      {videoSrc && (
-        <iframe
-          allow="autoplay; fullscreen"
-          allowFullScreen
-          src={videoSrc}
-          title="video"
-          width={widthHeight}
-          height={widthHeight}
-          style={{
-            position: 'absolute',
-            width: widthHeight,
-            height: widthHeight,
-            top: topLeft,
-            left: topLeft,
-          }}
+    <Box className={containerClassName} {...props}>
+      {!!videoSrc && (
+        <video
+          aria-hidden="true"
+          autoPlay
+          className={videoClassName}
+          loop
+          muted
+          playsInline
+        >
+          <source src={videoSrc} type="video/mp4" />
+        </video>
+      )}
+      {!!imageSrc && <Image alt="" src={imageSrc} />}
+      {!!tintColor && (
+        <Box
+          backgroundColor={tintColor}
+          className={tintClassName}
+          opacity={tintOpacity}
         />
       )}
-      {imageSrc && <Image alt="" src={imageSrc} />}
     </Box>
   );
 };

@@ -16,9 +16,12 @@ const meta: Meta<typeof Block> = {
       control: 'select',
       options: colors,
     },
-    backgroundImageSrc: 'string',
-    backgroundVideoSrc: 'string',
-    backgroundVideoZoom: 0,
+    backgroundImageSrc: { control: { type: 'text' } },
+    backgroundTintColor: { control: 'select', options: colors },
+    backgroundTintOpacity: {
+      control: { type: 'number', min: 0, max: 100, step: 1 },
+    },
+    backgroundVideoSrc: { control: { type: 'text' } },
     color: {
       control: 'select',
       options: colors,
@@ -34,6 +37,7 @@ export const Default: Story = {
   args: {
     children: 'Block',
     fullHeight: false,
+    backgroundTintOpacity: 0,
   },
 };
 
@@ -41,6 +45,7 @@ export const FullHeight: Story = {
   args: {
     children: 'Block',
     fullHeight: true,
+    backgroundTintOpacity: 0,
   },
 };
 
@@ -48,9 +53,8 @@ export const WithBackgroundMedia: Story = {
   args: {
     children: 'Block',
     fullHeight: true,
-    backgroundImageSrc: '/images/angkorwat.webp',
-    backgroundVideoSrc:
-      'https://player.vimeo.com/video/319326066?background=1&muted=1',
-    backgroundVideoZoom: 0,
+    backgroundImageSrc: '/images/waterfall.jpg',
+    backgroundVideoSrc: '/videos/lightning.mp4',
+    backgroundTintOpacity: 0,
   },
 };
