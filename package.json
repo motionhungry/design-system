@@ -13,7 +13,7 @@
     "prettier:check": "prettier . -c",
     "prettier:fix": "prettier . --ignore-unknown --write",
     "prisma": "pnpm --filter=@motionhungry/data run prisma",
-    "release": "pnpm build && pnpm changeset publish",
+    "release": "pnpm --filter=./packages/* && pnpm changeset publish",
     "test": "turbo run test"
   },
   "husky": {
