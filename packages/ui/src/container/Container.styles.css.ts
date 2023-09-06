@@ -14,12 +14,10 @@ export const className = style([
     },
   }),
   {
+    flexGrow: 1,
     margin: '0 auto',
     maxWidth: styleVars.layout.maxWidth,
-    '@container': {
-      [`(min-width: ${styleVars.layout.maxWidth})`]: {
-        background: 'red',
-      },
-    },
+    position: 'relative',
+    width: '100%',
   },
 ]);

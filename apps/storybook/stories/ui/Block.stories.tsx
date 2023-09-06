@@ -16,6 +16,18 @@ const meta: Meta<typeof Block> = {
       control: 'select',
       options: colors,
     },
+    justifyContent: {
+      control: 'select',
+      options: [
+        'flex-start',
+        'flex-end',
+        'center',
+        'space-between',
+        'space-around',
+        'space-evenly',
+        'stretch',
+      ],
+    },
     backgroundImageSrc: { control: { type: 'text' } },
     backgroundTintColor: { control: 'select', options: colors },
     backgroundTintOpacity: {
