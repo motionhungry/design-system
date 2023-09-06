@@ -1,5 +1,11 @@
 # @motionhungry/ui
 
+## 0.6.3
+
+### Patch Changes
+
+- 36fd1d2: Fix release build
+
 ## 0.6.2
 
 ### Patch Changes
