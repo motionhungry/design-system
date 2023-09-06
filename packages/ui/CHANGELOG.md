@@ -1,5 +1,11 @@
 # @motionhungry/ui
 
+## 0.6.1
+
+### Patch Changes
+
+- 0cd38b9: Fix Block component spacing
+
 ## 0.6.0
 
 ### Minor Changes
