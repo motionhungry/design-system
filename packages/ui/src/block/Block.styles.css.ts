@@ -16,5 +16,6 @@ export const className = style([
   }),
   {
     minHeight,
+    position: 'relative',
   },
 ]);

@@ -21,6 +21,10 @@ const BackgroundMedia = ({
   videoSrc,
   ...props
 }: BackgroundMedia): JSX.Element => {
+  if (!videoSrc && !imageSrc) {
+    return <></>;
+  }
+
   return (
     <Box className={containerClassName} {...props}>
       {!!videoSrc && (

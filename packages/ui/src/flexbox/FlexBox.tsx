@@ -7,6 +7,7 @@ export type FlexBoxProps = {
   as?: React.ElementType;
   children: React.ReactNode;
   className?: string;
+  style?: React.CSSProperties;
 } & Sprinkles;
 
 export const FlexBox = ({
@@ -18,6 +19,7 @@ export const FlexBox = ({
   flexDirection = 'row',
   flexWrap = 'nowrap',
   justifyContent = 'flex-start',
+  style,
   ...props
 }: FlexBoxProps): JSX.Element => {
   const className = atoms({
@@ -34,7 +36,7 @@ export const FlexBox = ({
   });
 
   return (
-    <Component className={className} {...props}>
+    <Component className={className} style={style} {...props}>
       {children}
     </Component>
   );
