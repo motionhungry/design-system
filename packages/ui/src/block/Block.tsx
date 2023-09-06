@@ -10,7 +10,7 @@ type BlockProps = {
   backgroundImageSrc?: string;
   backgroundVideoSrc?: string;
   backgroundTintColor?: BoxSprinkles['backgroundColor'];
-  backgroundTintOpacity: BoxSprinkles['opacity'];
+  backgroundTintOpacity?: BoxSprinkles['opacity'];
   children: React.ReactNode;
   fullHeight?: boolean;
   justifyContent?: FlexBoxSprinkles['justifyContent'];
