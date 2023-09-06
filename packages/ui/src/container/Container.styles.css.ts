@@ -1,4 +1,4 @@
-import { createVar, style } from '@vanilla-extract/css';
+import { style } from '@vanilla-extract/css';
 import { sprinkles } from '@/box/Box.sprinkles.css';
 import { styleVars } from '@/style';
 

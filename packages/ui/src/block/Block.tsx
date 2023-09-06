@@ -1,6 +1,5 @@
 import { assignInlineVars } from '@vanilla-extract/dynamic';
 import { BackgroundMedia } from '@/bg-media';
-import { Box } from '@/box';
 import { Container } from '@/container';
 import { FlexBox } from '@/flexbox';
 import type { Sprinkles as FlexBoxSprinkles } from '@/flexbox/FlexBox.sprinkles.css';
