@@ -1,5 +1,11 @@
 # @motionhungry/ui
 
+## 0.6.2
+
+### Patch Changes
+
+- eccea9a: Fix build and Block component props
+
 ## 0.6.1
 
 ### Patch Changes
