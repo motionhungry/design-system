@@ -1,5 +1,11 @@
 # @motionhungry/ui
 
+## 0.6.0
+
+### Minor Changes
+
+- c6ee1b2: Added Image and Background Media components
+
 ## 0.5.3
 
 ### Patch Changes
