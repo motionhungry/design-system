@@ -1,6 +1,6 @@
 import { defineProperties } from '@vanilla-extract/sprinkles';
 
-import { styleVars } from '@/style';
+import { styleVars } from '@/style/contract.css';
 
 const opacity = Array(101)
   .fill(null)

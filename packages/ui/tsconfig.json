@@ -2,8 +2,13 @@
   "extends": "@motionhungry/style-policy/tsconfig/react.json",
   "compilerOptions": {
     "baseUrl": "./src",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "noEmit": false,
+    "outDir": "dist",
     "paths": {
       "@/*": ["./*"]
     }
-  }
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx", "setupTests.ts"]
 }

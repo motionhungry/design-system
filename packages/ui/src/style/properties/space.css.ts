@@ -1,10 +1,10 @@
 import { defineProperties } from '@vanilla-extract/sprinkles';
 
+import { breakpoints } from '@/style';
 import { styleVars } from '@/style/contract.css';
-import { transformBreakpoints } from '@/style/utils';
 
 export const spaceProps = defineProperties({
-  conditions: transformBreakpoints(),
+  conditions: breakpoints,
   defaultCondition: 'xsmall',
   properties: {
     paddingTop: styleVars.space,

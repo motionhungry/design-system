@@ -1,4 +1,4 @@
-import { styleVars } from '@/style';
+import { styleVars } from '@/style/contract.css';
 import { recipe } from '@vanilla-extract/recipes';
 
 const { button: buttonVars } = styleVars.components;

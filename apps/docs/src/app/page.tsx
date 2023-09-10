@@ -1,11 +1,15 @@
-import { Box, Block, Text } from '@motionhungry/ui';
+import { Box, FlexBox, Block, Text } from '@motionhungry/ui';
 
 export default function Page(): JSX.Element {
   return (
-    <Block backgroundColor="neutral.200" fullHeight justifyContent="flex-end">
-      <Text variant="h1" color="neutral.800">
-        Motion Hungry UI
-      </Text>
+    <Block backgroundColor="primary.50" justifyContent="center" fullHeight>
+      <FlexBox alignItems="center" justifyContent="center">
+        <Box>
+          <Text variant="h1" color="primary.700">
+            Motion Hungry
+          </Text>
+        </Box>
+      </FlexBox>
     </Block>
   );
 }

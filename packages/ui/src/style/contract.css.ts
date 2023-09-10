@@ -1,25 +1,14 @@
-import { createThemeContract } from '@vanilla-extract/css';
-
 import {
-  borderRadius,
-  components,
-  elevation,
-  fontFamily,
-  layout,
-  legacyPalette,
-  palette,
-  space,
-  typography,
-} from './tokens';
+  createThemeContract,
+  createGlobalThemeContract,
+} from '@vanilla-extract/css';
 
-export const styleVars = createThemeContract({
-  borderRadius,
-  components,
-  elevation,
-  fontFamily,
-  layout,
-  legacyPalette,
-  palette,
-  space,
-  typography,
+import { defaultTokens } from './tokens';
+
+export const globalVars = createGlobalThemeContract({
+  font: {
+    body: 'font-body',
+  },
 });
+
+export const styleVars = createThemeContract(defaultTokens);

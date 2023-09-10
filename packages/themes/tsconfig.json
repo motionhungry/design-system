@@ -1,3 +1,11 @@
 {
-  "extends": "@motionhungry/style-policy/tsconfig/react.json"
+  "extends": "@motionhungry/style-policy/tsconfig/react.json",
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "outDir": "dist",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "noEmit": false
+  },
+  "include": ["src/**/*.ts"]
 }

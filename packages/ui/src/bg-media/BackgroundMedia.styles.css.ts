@@ -1,5 +1,5 @@
 import { style } from '@vanilla-extract/css';
-import { zIndex } from '@/style/tokens';
+import { styleVars } from '@/style/contract.css';
 
 export const containerClassName = style({
   height: '100%',
@@ -8,7 +8,7 @@ export const containerClassName = style({
   position: 'absolute',
   top: 0,
   width: '100%',
-  zIndex: zIndex.backgroundImage,
+  zIndex: styleVars.zIndex.backgroundImage,
 });
 
 export const videoClassName = style({

@@ -1,7 +1,8 @@
-import { Block, palette } from '@motionhungry/ui';
+import { Block } from '@motionhungry/ui';
+import { defaultTokens } from '@motionhungry/ui/tokens';
 import type { Meta, StoryObj } from '@storybook/react';
 
-const colors = Object.keys(palette);
+const colors = Object.keys(defaultTokens.palette);
 
 const meta: Meta<typeof Block> = {
   title: 'ui/Block',

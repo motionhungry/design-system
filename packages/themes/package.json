@@ -5,16 +5,22 @@
   "keywords": [],
   "license": "MIT",
   "author": "Kyle Getrost <kyle@motionhungry.com>",
+  "exports": {
+    "./default.css": {
+      "import": "./dist/default.css.js",
+      "types": "./dist/default.css.d.ts"
+    },
+    "./reset.css": "./dist/reset.css.js"
+  },
   "main": "./dist/index.js",
-  "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "files": [
     "./dist/**"
   ],
   "scripts": {
-    "build": "vite build",
+    "build": "./scripts/build.sh",
     "clean": "rimraf dist .turbo node_modules",
-    "dev": "vite build --watch",
+    "dev": "./scripts/dev.sh",
     "eslint:check": "eslint --max-warnings=0 .",
     "eslint:fix": "eslint --fix --max-warnings=0 .",
     "test": "jest"
@@ -40,12 +46,15 @@
     "@vanilla-extract/jest-transform": "^1.1.1",
     "@vanilla-extract/vite-plugin": "^3.8.2",
     "babel-jest": "^29.6.2",
+    "concurrently": "^8.2.1",
+    "copyfiles": "^2.4.1",
     "jest": "^29.6.2",
     "jest-environment-jsdom": "^29.6.2",
     "prop-types": "^15.8.1",
     "react-test-renderer": "^18.2.0",
     "ts-jest": "^29.1.1",
-    "typescript": "^5.1.6",
+    "tsc-alias": "^1.8.7",
+    "typescript": "^5.2.2",
     "vite": "^4.4.1",
     "vite-plugin-dts": "^3.3.0",
     "vite-plugin-linter": "^2.0.2",
@@ -59,4 +68,3 @@
     "access": "public"
   }
 }
-

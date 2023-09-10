@@ -1,7 +1,21 @@
-import '@motionhungry/ui/dist/style.css';
-import '@motionhungry/ui-themes/dist/style.css';
+import '@motionhungry/ui-themes/reset.css';
+import { darkTheme } from '@motionhungry/ui-themes/default.css';
+import localFont from 'next/font/local';
 
-import { lightTheme } from '@motionhungry/ui-themes';
+const gotham = localFont({
+  src: [
+    {
+      path: '../../node_modules/@motionhungry/ui-themes/fonts/Gotham-Book.otf',
+      weight: '400',
+      style: 'normal',
+    },
+    {
+      path: '../../node_modules/@motionhungry/ui-themes/fonts/Gotham-Medium.otf',
+      weight: '500',
+      style: 'normal',
+    },
+  ],
+});
 
 export default function RootLayout({
   children,
@@ -10,7 +24,7 @@ export default function RootLayout({
 }): JSX.Element {
   return (
     <html lang="en">
-      <body className={lightTheme}>{children}</body>
+      <body className={`${gotham.className} ${darkTheme}`}>{children}</body>
     </html>
   );
 }

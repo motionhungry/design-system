@@ -1,4 +1,4 @@
 export * from './atoms';
-export * from './contract.css';
+export * from './breakpoints';
 export * from './properties';
 export * from './tokens';

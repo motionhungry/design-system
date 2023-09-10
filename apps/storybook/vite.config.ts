@@ -1,6 +1,9 @@
-import { defineConfig } from 'vite';
-import tsconfigPaths from 'vite-tsconfig-paths';
+import { vanillaExtractPlugin } from '@vanilla-extract/vite-plugin';
+import react from '@vitejs/plugin-react';
+import { defineConfig, UserConfigExport } from 'vite';
 
-export default defineConfig((configEnv) => ({
-  plugins: [tsconfigPaths()],
+const config: UserConfigExport = defineConfig(() => ({
+  plugins: [react(), vanillaExtractPlugin({ identifiers: 'debug' })],
 }));
+
+export default config;

@@ -1,6 +1,6 @@
 import { style } from '@vanilla-extract/css';
 import { sprinkles } from '@/box/Box.sprinkles.css';
-import { styleVars } from '@/style';
+import { styleVars } from '@/style/contract.css';
 
 export const className = style([
   sprinkles({

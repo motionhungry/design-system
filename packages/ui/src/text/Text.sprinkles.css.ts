@@ -1,9 +1,10 @@
 import { createSprinkles, defineProperties } from '@vanilla-extract/sprinkles';
-import { styleVars, colorProps } from '@/style';
-import { transformBreakpoints } from '@/style/utils';
+import { colorProps } from '@/style';
+import { styleVars } from '@/style/contract.css';
+import { breakpoints } from '@/style/breakpoints';
 
 const textProperties = defineProperties({
-  conditions: transformBreakpoints(),
+  conditions: breakpoints,
   defaultCondition: 'xsmall',
   properties: {
     textAlign: ['left', 'center', 'right', 'justify'],

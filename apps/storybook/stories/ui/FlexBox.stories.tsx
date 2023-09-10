@@ -1,7 +1,8 @@
-import { FlexBox, palette, space } from '@motionhungry/ui';
+import { FlexBox } from '@motionhungry/ui';
+import { defaultTokens } from '@motionhungry/ui/tokens';
 import type { Meta, StoryObj } from '@storybook/react';
 
-const colors = Object.keys(palette);
+const colors = Object.keys(defaultTokens.palette);
 
 const meta: Meta<typeof FlexBox> = {
   title: 'ui/FlexBox',
@@ -13,7 +14,7 @@ const meta: Meta<typeof FlexBox> = {
     },
     padding: {
       control: 'select',
-      options: Object.keys(space),
+      options: Object.keys(defaultTokens.space),
     },
     flexDirection: {
       control: 'radio',
