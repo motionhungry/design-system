@@ -3,4 +3,4 @@
 rimraf ./dist
 TSCONFIG=tsconfig.build.json
 tsc --project $TSCONFIG && tsc-alias -p $TSCONFIG
-pnpm rimraf ./dist/**/*.css.d.ts*
+#pnpm rimraf ./dist/**/*.css.d.ts*

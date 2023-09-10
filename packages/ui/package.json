@@ -10,8 +10,14 @@
       "types": "./dist/index.d.ts",
       "import": "./dist/index.js"
     },
-    "./contract.css": "./dist/style/contract.css.js",
-    "./tokens": "./dist/style/tokens.js"
+    "./contract.css": {
+      "types": "./dist/style/contract.css.d.ts",
+      "import": "./dist/style/contract.css.js"
+    },
+    "./tokens": {
+      "types": "./dist/style/tokens.js",
+      "import": "./dist/style/tokens.css.d.ts"
+    }
   },
   "files": [
     "./dist/**"

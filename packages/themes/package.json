@@ -7,13 +7,14 @@
   "author": "Kyle Getrost <kyle@motionhungry.com>",
   "exports": {
     "./default.css": {
-      "import": "./dist/default.css.js",
-      "types": "./dist/default.css.d.ts"
+      "types": "./dist/default.css.d.ts",
+      "import": "./dist/default.css.js"
     },
-    "./reset.css": "./dist/reset.css.js"
+    "./reset.css": {
+      "types": "./dist/reset.css.d.ts",
+      "import": "./dist/reset.css.js"
+    }
   },
-  "main": "./dist/index.js",
-  "types": "./dist/index.d.ts",
   "files": [
     "./dist/**"
   ],
