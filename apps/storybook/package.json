@@ -1,6 +1,6 @@
 {
-  "name": "motionhungry-storybook",
-  "version": "1.0.1",
+  "name": "veer-storybook",
+  "version": "0.0.0",
   "description": "",
   "keywords": [],
   "license": "ISC",
@@ -13,10 +13,10 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "@motionhungry/icons": "workspace:*",
-    "@motionhungry/ui": "workspace:*",
-    "@motionhungry/ui-themes": "workspace:*",
     "@vanilla-extract/css": "^1.12.0",
+    "@veer/icons": "workspace:*",
+    "@veer/system": "workspace:*",
+    "@veer/themes": "workspace:*",
     "@vitejs/plugin-react": "^4.0.4",
     "styled-components": "^6.0.1"
   },

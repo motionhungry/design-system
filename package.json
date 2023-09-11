@@ -1,5 +1,5 @@
 {
-  "name": "motionhungry",
+  "name": "veer",
   "private": true,
   "scripts": {
     "build": "turbo run build",

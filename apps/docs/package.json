@@ -1,5 +1,5 @@
 {
-  "name": "motionhungry-docs",
+  "name": "veer-docs",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -9,9 +9,9 @@
     "start": "next start"
   },
   "dependencies": {
-    "@motionhungry/icons": "workspace:*",
-    "@motionhungry/ui": "workspace:*",
-    "@motionhungry/ui-themes": "workspace:*",
+    "@veer/icons": "workspace:*",
+    "@veer/system": "workspace:*",
+    "@veer/themes": "workspace:*",
     "next": "^13.4.19",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
