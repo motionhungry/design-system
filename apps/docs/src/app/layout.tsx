@@ -1,16 +1,16 @@
-import '@motionhungry/ui-themes/reset.css';
-import { darkTheme } from '@motionhungry/ui-themes/default.css';
+import '@veer/themes/reset.css';
+import { darkTheme } from '@veer/themes/default.css';
 import localFont from 'next/font/local';
 
 const gotham = localFont({
   src: [
     {
-      path: '../../node_modules/@motionhungry/ui-themes/fonts/Gotham-Book.otf',
+      path: '../../node_modules/@veer/themes/fonts/Gotham-Book.otf',
       weight: '400',
       style: 'normal',
     },
     {
-      path: '../../node_modules/@motionhungry/ui-themes/fonts/Gotham-Medium.otf',
+      path: '../../node_modules/@veer/themes/fonts/Gotham-Medium.otf',
       weight: '500',
       style: 'normal',
     },

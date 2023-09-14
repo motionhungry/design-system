@@ -1,4 +1,4 @@
-import { LinkButton } from '@motionhungry/ui';
+import { LinkButton } from '@veer/system';
 
 export default {
   title: 'ui/LinkButton',

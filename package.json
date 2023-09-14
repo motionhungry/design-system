@@ -5,6 +5,8 @@
     "build": "turbo run build",
     "clean": "turbo run clean && rimraf node_modules",
     "dev": "turbo run dev",
+    "dev:others": "turbo run dev --filter='!./packages/system'",
+    "dev:system": "turbo run dev --filter='./packages/system'",
     "eslint:check": "turbo run eslint:check",
     "eslint:fix": "turbo run eslint:fix",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",

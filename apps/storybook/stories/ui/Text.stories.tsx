@@ -1,5 +1,5 @@
-import { Text } from '@motionhungry/ui';
-import { defaultTokens } from '@motionhungry/ui/tokens';
+import { Text } from '@veer/system';
+import { defaultTokens } from '@veer/system/tokens';
 import type { Meta, StoryObj } from '@storybook/react';
 
 const colors = Object.keys(defaultTokens.palette);

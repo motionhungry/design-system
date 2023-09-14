@@ -1,6 +1,6 @@
 import { defineProperties } from '@vanilla-extract/sprinkles';
 
-import { breakpoints } from '@/style';
+import { breakpoints } from '@/style/breakpoints';
 import { styleVars } from '@/style/contract.css';
 
 export const spaceProps = defineProperties({

@@ -1,7 +1,6 @@
 import { createSprinkles, defineProperties } from '@vanilla-extract/sprinkles';
-import { colorProps } from '@/style';
+import { breakpoints, colorProps } from '@/style';
 import { styleVars } from '@/style/contract.css';
-import { breakpoints } from '@/style/breakpoints';
 
 const textProperties = defineProperties({
   conditions: breakpoints,

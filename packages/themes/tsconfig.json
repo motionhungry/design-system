@@ -2,10 +2,19 @@
   "extends": "@motionhungry/style-policy/tsconfig/react.json",
   "compilerOptions": {
     "baseUrl": "./src",
-    "outDir": "dist",
+    "declaration": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "module": "NodeNext",
     "moduleResolution": "NodeNext",
-    "noEmit": false
+    "outDir": "dist",
+    "paths": {
+      "@/*": ["./*"]
+    },
+    "skipLibCheck": true,
+    "target": "ESNext"
   },
-  "include": ["src/**/*.ts"]
+  "include": ["src/**/*.css.ts", "src/**/*.ts", "src/**/*.tsx"],
+  "exclude": ["dist", "node_modules", "src/**/*.spec.ts", "src/**/*.spec.tsx"]
 }

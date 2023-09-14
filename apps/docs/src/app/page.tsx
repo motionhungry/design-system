@@ -1,4 +1,4 @@
-import { Box, FlexBox, Block, Text } from '@motionhungry/ui';
+import { Box, FlexBox, Block, Text } from '@veer/system';
 
 export default function Page(): JSX.Element {
   return (

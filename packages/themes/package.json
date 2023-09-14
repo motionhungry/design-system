@@ -6,14 +6,8 @@
   "license": "MIT",
   "author": "Kyle Getrost <kyle@motionhungry.com>",
   "exports": {
-    "./default.css": {
-      "types": "./dist/default.css.d.ts",
-      "import": "./dist/default.css.js"
-    },
-    "./reset.css": {
-      "types": "./dist/reset.css.d.ts",
-      "import": "./dist/reset.css.js"
-    }
+    "./default.css": "./dist/default.css.js",
+    "./reset.css": "./dist/reset.css.js"
   },
   "files": [
     "./dist/**"
@@ -29,7 +23,6 @@
   "dependencies": {
     "@vanilla-extract/css": "^1.12.0",
     "@veer/system": "workspace:*",
-    "@vitejs/plugin-react": "^4.0.4",
     "react": "^18.2.0",
     "react-aria": "^3.26.0",
     "react-dom": "^18.2.0"
@@ -45,7 +38,6 @@
     "@types/prop-types": "^15.7.5",
     "@types/react": "^18.2.14",
     "@vanilla-extract/jest-transform": "^1.1.1",
-    "@vanilla-extract/vite-plugin": "^3.8.2",
     "babel-jest": "^29.6.2",
     "concurrently": "^8.2.1",
     "copyfiles": "^2.4.1",
@@ -55,11 +47,7 @@
     "react-test-renderer": "^18.2.0",
     "ts-jest": "^29.1.1",
     "tsc-alias": "^1.8.7",
-    "typescript": "^5.2.2",
-    "vite": "^4.4.1",
-    "vite-plugin-dts": "^3.3.0",
-    "vite-plugin-linter": "^2.0.2",
-    "vite-tsconfig-paths": "^4.2.0"
+    "typescript": "^5.2.2"
   },
   "peerDependencies": {
     "react": ">=18",

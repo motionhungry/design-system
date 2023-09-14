@@ -1,4 +1,4 @@
-import { Image } from '@motionhungry/ui';
+import { Image } from '@veer/system';
 import type { Meta, StoryObj } from '@storybook/react';
 
 const meta: Meta<typeof Image> = {

@@ -1,6 +1,6 @@
-import { BackgroundMedia, Box, Text } from '@motionhungry/ui';
-import { defaultTokens } from '@motionhungry/ui/tokens';
 import type { Meta, StoryObj } from '@storybook/react';
+import { BackgroundMedia, Box, Text } from '@veer/system';
+import { defaultTokens } from '@veer/system/tokens';
 
 const colors = Object.keys(defaultTokens.palette);
 

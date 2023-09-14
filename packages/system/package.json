@@ -1,10 +1,11 @@
 {
   "name": "@veer/system",
   "version": "0.0.0",
-  "description": "",
+  "description": "Veer React Component Library",
   "keywords": [],
   "license": "MIT",
   "author": "Kyle Getrost <kyle@motionhungry.com>",
+  "type": "module",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
@@ -15,10 +16,13 @@
       "import": "./dist/style/contract.css.js"
     },
     "./tokens": {
-      "types": "./dist/style/tokens.js",
-      "import": "./dist/style/tokens.css.d.ts"
+      "types": "./dist/style/tokens.d.ts",
+      "import": "./dist/style/tokens.js"
     }
   },
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "files": [
     "./dist/**"
   ],
@@ -28,6 +32,8 @@
     "dev": "./scripts/dev.sh",
     "eslint:check": "eslint --max-warnings=0 .",
     "eslint:fix": "eslint --fix --max-warnings=0 .",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
     "test": "jest"
   },
   "dependencies": {
@@ -35,7 +41,6 @@
     "@vanilla-extract/dynamic": "^2.0.3",
     "@vanilla-extract/recipes": "^0.5.0",
     "@vanilla-extract/sprinkles": "^1.6.1",
-    "@vitejs/plugin-react": "^4.0.4",
     "clsx": "^2.0.0",
     "react": "^18.2.0",
     "react-aria": "^3.26.0",
@@ -48,14 +53,17 @@
     "@types/jest": "^29.5.3",
     "@types/prop-types": "^15.7.5",
     "@types/react": "^18.2.14",
+    "@types/react-dom": "^18.2.7",
     "@vanilla-extract/jest-transform": "^1.1.1",
     "concurrently": "^8.2.1",
+    "glob": "^10.3.4",
     "jest": "^29.6.2",
     "jest-environment-jsdom": "^29.6.2",
     "prop-types": "^15.8.1",
     "react-test-renderer": "^18.2.0",
     "ts-jest": "^29.1.1",
     "tsc-alias": "^1.8.7",
+    "tsup": "^7.1.0",
     "typescript": "^5.2.2"
   },
   "peerDependencies": {

@@ -1,4 +1,4 @@
-import { Menu } from '@motionhungry/icons';
+import { Menu } from '@veer/icons';
 
 export default {
   title: 'icons/Menu',

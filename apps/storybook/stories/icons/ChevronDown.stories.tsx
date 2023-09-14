@@ -1,4 +1,4 @@
-import { ChevronDown } from '@motionhungry/icons';
+import { ChevronDown } from '@veer/icons';
 
 export default {
   title: 'icons/ChevronDown',

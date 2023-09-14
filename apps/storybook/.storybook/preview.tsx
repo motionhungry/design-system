@@ -1,12 +1,11 @@
-import '@motionhungry/ui-themes/reset.css';
-import { lightTheme } from '@motionhungry/ui-themes/default.css';
+import '@veer/themes/default.css';
 import { Preview } from '@storybook/react';
 import React from 'react';
 
 const preview: Preview = {
   decorators: [
     (Story) => (
-      <div className={lightTheme}>
+      <div>
         <Story />
       </div>
     ),

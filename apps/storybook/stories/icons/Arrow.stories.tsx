@@ -1,4 +1,4 @@
-import { Arrow } from '@motionhungry/icons';
+import { Arrow } from '@veer/icons';
 
 export default {
   title: 'icons/Arrow',
