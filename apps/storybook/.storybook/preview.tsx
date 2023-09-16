@@ -1,11 +1,12 @@
-import '@veer/themes/default.css';
+import '@veer/themes/reset.css';
+import { lightTheme } from '@veer/themes/default.css';
 import { Preview } from '@storybook/react';
 import React from 'react';
 
 const preview: Preview = {
   decorators: [
     (Story) => (
-      <div>
+      <div className={lightTheme}>
         <Story />
       </div>
     ),

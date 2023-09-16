@@ -2,5 +2,6 @@
 
 rimraf ./dist
 copyfiles ./fonts/* ./dist/
-tsc && tsc-alias
+TSCONFIG=tsconfig.build.json
+tsc --project $TSCONFIG -w
 #rimraf ./dist/**/*.css.d.ts*
