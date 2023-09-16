@@ -4,5 +4,5 @@
     "noEmit": false,
     "outDir": "dist"
   },
-  "exclude": ["src/**/*.spec.ts", "scripts/**/*"]
+  "exclude": ["setupTests.ts", "src/**/*.spec.ts", "scripts/**/*"]
 }
