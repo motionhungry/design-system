@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { BackgroundMedia, Box, Text } from '@veer/system';
-import { defaultTokens } from '@veer/system/tokens';
+import { BackgroundMedia, Box, Text } from '@veer-ui/system';
+import { defaultTokens } from '@veer-ui/system/tokens';
 
 const colors = Object.keys(defaultTokens.palette);
 

@@ -1,4 +1,4 @@
-import { Image } from '@veer/system';
+import { Image } from '@veer-ui/system';
 import type { Meta, StoryObj } from '@storybook/react';
 
 const meta: Meta<typeof Image> = {

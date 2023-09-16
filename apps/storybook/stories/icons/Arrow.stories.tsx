@@ -1,4 +1,4 @@
-import { Arrow } from '@veer/icons';
+import { Arrow } from '@veer-ui/icons';
 
 export default {
   title: 'icons/Arrow',

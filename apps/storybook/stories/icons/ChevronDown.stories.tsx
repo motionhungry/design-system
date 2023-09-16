@@ -1,4 +1,4 @@
-import { ChevronDown } from '@veer/icons';
+import { ChevronDown } from '@veer-ui/icons';
 
 export default {
   title: 'icons/ChevronDown',

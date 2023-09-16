@@ -1,4 +1,4 @@
-import { Menu } from '@veer/icons';
+import { Menu } from '@veer-ui/icons';
 
 export default {
   title: 'icons/Menu',

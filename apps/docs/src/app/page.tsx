@@ -1,4 +1,4 @@
-import { Box, FlexBox, Block, Text } from '@veer/system';
+import { Box, FlexBox, Block, Text } from '@veer-ui/system';
 
 export default function Page(): JSX.Element {
   return (
