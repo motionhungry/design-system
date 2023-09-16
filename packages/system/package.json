@@ -5,7 +5,6 @@
   "keywords": [],
   "license": "MIT",
   "author": "Kyle Getrost <kyle@motionhungry.com>",
-  "type": "module",
   "exports": {
     ".": {
       "import": "./dist/index.js",
