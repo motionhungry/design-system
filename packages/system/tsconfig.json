@@ -1,16 +1,16 @@
 {
-  "extends": "@motionhungry/style-policy/tsconfig/react.json",
+  "extends": ["@tsconfig/strictest", "@tsconfig/next"],
   "compilerOptions": {
-    "baseUrl": "./src",
+    "baseUrl": "src",
     "declaration": true,
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
-    "module": "NodeNext",
-    "moduleResolution": "NodeNext",
-    "outDir": "dist",
+    "declarationMap": true,
+    "exactOptionalPropertyTypes": false,
+    "noEmit": true,
+    "incremental": true,
+    "target": "ES2015",
     "paths": {
       "@/*": ["./*"]
     }
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx"]
+  "include": ["src/**/*.ts", "src/**/*.tsx", "scripts/**/*"]
 }

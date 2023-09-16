@@ -8,16 +8,19 @@
   "type": "module",
   "exports": {
     ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.js"
+      "import": "./dist/index.js",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
     },
     "./contract.css": {
-      "types": "./dist/style/contract.css.d.ts",
-      "import": "./dist/style/contract.css.js"
+      "import": "./dist/style/contract.css.js",
+      "require": "./dist/style/contract.css.js",
+      "types": "./dist/style/contract.css.d.ts"
     },
     "./tokens": {
-      "types": "./dist/style/tokens.d.ts",
-      "import": "./dist/style/tokens.js"
+      "import": "./dist/style/tokens.js",
+      "require": "./dist/style/tokens.js",
+      "types": "./dist/style/tokens.d.ts"
     }
   },
   "main": "./dist/index.js",
@@ -50,20 +53,21 @@
     "@motionhungry/style-policy": "1.1.0-next.6",
     "@testing-library/jest-dom": "^6.0.1",
     "@testing-library/react": "^14.0.0",
+    "@tsconfig/next": "^2.0.0",
+    "@tsconfig/strictest": "^2.0.2",
     "@types/jest": "^29.5.3",
+    "@types/node": "^17.0.12",
     "@types/prop-types": "^15.7.5",
     "@types/react": "^18.2.14",
     "@types/react-dom": "^18.2.7",
     "@vanilla-extract/jest-transform": "^1.1.1",
     "concurrently": "^8.2.1",
-    "glob": "^10.3.4",
     "jest": "^29.6.2",
     "jest-environment-jsdom": "^29.6.2",
     "prop-types": "^15.8.1",
     "react-test-renderer": "^18.2.0",
     "ts-jest": "^29.1.1",
     "tsc-alias": "^1.8.7",
-    "tsup": "^7.1.0",
     "typescript": "^5.2.2"
   },
   "peerDependencies": {
