@@ -1,4 +1,4 @@
-import { Container } from '@motionhungry/ui';
+import { Container } from '@veer/system';
 import type { Meta, StoryObj } from '@storybook/react';
 
 const meta: Meta<typeof Container> = {

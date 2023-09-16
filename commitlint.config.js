@@ -22,7 +22,16 @@ module.exports = {
     'scope-enum': [
       2,
       'always',
-      ['config', 'deps', 'docs', 'icons', 'themes', 'ui', 'storybook'],
+      [
+        'config',
+        'deps',
+        'docs',
+        'icons',
+        'system',
+        'themes',
+        'ui',
+        'storybook',
+      ],
     ],
     'scope-empty': [1, 'never'],
   },

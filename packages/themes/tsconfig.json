@@ -1,3 +1,12 @@
 {
-  "extends": "@motionhungry/style-policy/tsconfig/react.json"
+  "extends": ["@tsconfig/strictest", "@tsconfig/next"],
+  "compilerOptions": {
+    "declaration": true,
+    "declarationMap": true,
+    "exactOptionalPropertyTypes": false,
+    "noEmit": true,
+    "incremental": true,
+    "target": "ES2015"
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx", "scripts/**/*"]
 }

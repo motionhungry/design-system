@@ -1,4 +1,4 @@
-import { Button } from '@motionhungry/ui';
+import { Button } from '@veer/system';
 
 export default {
   title: 'ui/Button',

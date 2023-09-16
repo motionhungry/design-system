@@ -1,7 +1,8 @@
-import { Box, palette, space } from '@motionhungry/ui';
+import { Box } from '@veer/system';
+import { defaultTokens } from '@veer/system/tokens';
 import type { Meta, StoryObj } from '@storybook/react';
 
-const colors = Object.keys(palette);
+const colors = Object.keys(defaultTokens.palette);
 
 const meta: Meta<typeof Box> = {
   title: 'ui/Box',
@@ -13,7 +14,7 @@ const meta: Meta<typeof Box> = {
     },
     padding: {
       control: 'select',
-      options: Object.keys(space),
+      options: Object.keys(defaultTokens.space),
     },
     backgroundColor: {
       control: 'select',

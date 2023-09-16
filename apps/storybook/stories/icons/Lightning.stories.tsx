@@ -1,4 +1,4 @@
-import { Lightning } from '@motionhungry/icons';
+import { Lightning } from '@veer/icons';
 
 export default {
   title: 'icons/Lightning',

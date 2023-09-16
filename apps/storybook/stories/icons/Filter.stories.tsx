@@ -1,4 +1,4 @@
-import { Filter } from '@motionhungry/icons';
+import { Filter } from '@veer/icons';
 
 export default {
   title: 'icons/Filter',

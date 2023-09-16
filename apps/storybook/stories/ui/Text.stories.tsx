@@ -1,7 +1,8 @@
-import { Text, palette, typography } from '@motionhungry/ui';
+import { Text } from '@veer/system';
+import { defaultTokens } from '@veer/system/tokens';
 import type { Meta, StoryObj } from '@storybook/react';
 
-const colors = Object.keys(palette);
+const colors = Object.keys(defaultTokens.palette);
 
 const meta: Meta<typeof Text> = {
   title: 'ui/Text',
@@ -17,7 +18,7 @@ const meta: Meta<typeof Text> = {
     },
     variant: {
       control: 'select',
-      options: Object.keys(typography.fontSize),
+      options: Object.keys(defaultTokens.typography.fontSize),
     },
     fontWeight: {
       control: 'select',

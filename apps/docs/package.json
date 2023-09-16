@@ -1,17 +1,17 @@
 {
-  "name": "motionhungry-docs",
+  "name": "veer-docs",
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "build": "next build",
-    "dev": "next dev --port 3001",
+    "build": "echo next build",
+    "dev": "next dev",
     "lint": "next lint",
     "start": "next start"
   },
   "dependencies": {
-    "@motionhungry/icons": "workspace:*",
-    "@motionhungry/ui": "workspace:*",
-    "@motionhungry/ui-themes": "workspace:*",
+    "@veer/icons": "workspace:*",
+    "@veer/system": "workspace:*",
+    "@veer/themes": "workspace:*",
     "next": "^13.4.19",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
@@ -25,4 +25,3 @@
     "typescript": "^5.2.2"
   }
 }
-

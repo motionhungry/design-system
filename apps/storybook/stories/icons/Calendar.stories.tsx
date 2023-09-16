@@ -1,4 +1,4 @@
-import { Calendar } from '@motionhungry/icons';
+import { Calendar } from '@veer/icons';
 
 export default {
   title: 'icons/Calendar',

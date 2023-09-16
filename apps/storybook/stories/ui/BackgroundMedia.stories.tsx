@@ -1,7 +1,8 @@
-import { BackgroundMedia, Box, palette, Text } from '@motionhungry/ui';
 import type { Meta, StoryObj } from '@storybook/react';
+import { BackgroundMedia, Box, Text } from '@veer/system';
+import { defaultTokens } from '@veer/system/tokens';
 
-const colors = Object.keys(palette);
+const colors = Object.keys(defaultTokens.palette);
 
 const meta: Meta<typeof BackgroundMedia> = {
   title: 'ui/BackgroundMedia',
