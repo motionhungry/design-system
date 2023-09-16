@@ -1,4 +1,4 @@
-import { Filter } from '@veer/icons';
+import { Filter } from '@veer-ui/icons';
 
 export default {
   title: 'icons/Filter',

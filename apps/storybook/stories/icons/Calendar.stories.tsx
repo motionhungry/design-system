@@ -1,4 +1,4 @@
-import { Calendar } from '@veer/icons';
+import { Calendar } from '@veer-ui/icons';
 
 export default {
   title: 'icons/Calendar',

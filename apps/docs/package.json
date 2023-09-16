@@ -9,9 +9,9 @@
     "start": "next start"
   },
   "dependencies": {
-    "@veer/icons": "workspace:*",
-    "@veer/system": "workspace:*",
-    "@veer/themes": "workspace:*",
+    "@veer-ui/icons": "workspace:*",
+    "@veer-ui/system": "workspace:*",
+    "@veer-ui/themes": "workspace:*",
     "next": "^13.4.19",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"

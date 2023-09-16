@@ -1,4 +1,4 @@
-import { LinkButton } from '@veer/system';
+import { LinkButton } from '@veer-ui/system';
 
 export default {
   title: 'ui/LinkButton',

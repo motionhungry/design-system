@@ -1,4 +1,4 @@
-import { Button } from '@veer/system';
+import { Button } from '@veer-ui/system';
 
 export default {
   title: 'ui/Button',

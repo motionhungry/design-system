@@ -1,4 +1,4 @@
-import { Lightning } from '@veer/icons';
+import { Lightning } from '@veer-ui/icons';
 
 export default {
   title: 'icons/Lightning',

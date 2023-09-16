@@ -1,4 +1,4 @@
-import { Container } from '@veer/system';
+import { Container } from '@veer-ui/system';
 import type { Meta, StoryObj } from '@storybook/react';
 
 const meta: Meta<typeof Container> = {
