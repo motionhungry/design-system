@@ -1,5 +1,13 @@
 # @veer/themes
 
+## 0.1.1
+
+### Patch Changes
+
+- 3d41644: Rename NPM scope @veer to @veer-ui
+- Updated dependencies [3d41644]
+  - @veer-ui/system@0.1.1
+
 ## 0.1.0
 
 ### Minor Changes
