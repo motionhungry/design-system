@@ -1,5 +1,11 @@
 # @veer/system
 
+## 0.1.2
+
+### Patch Changes
+
+- ab78ba9: Fix type defs
+
 ## 0.1.1
 
 ### Patch Changes
