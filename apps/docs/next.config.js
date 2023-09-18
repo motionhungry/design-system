@@ -4,7 +4,7 @@ const withVanillaExtract = createVanillaExtractPlugin();
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  transpilePackages: ['@motionhungry/ui', '@motionhungry/ui-themes'],
+  transpilePackages: ['@veer-ui/themes', '@veer-ui/system'],
 };
 
 module.exports = withVanillaExtract(nextConfig);
