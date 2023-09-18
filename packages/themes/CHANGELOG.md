@@ -1,5 +1,12 @@
 # @veer/themes
 
+## 0.1.2
+
+### Patch Changes
+
+- Updated dependencies [ab78ba9]
+  - @veer-ui/system@0.1.2
+
 ## 0.1.1
 
 ### Patch Changes
