@@ -1,5 +1,11 @@
 # @veer/system
 
+## 0.1.3
+
+### Patch Changes
+
+- d736a11: Fix 'as' prop in Block component
+
 ## 0.1.2
 
 ### Patch Changes
