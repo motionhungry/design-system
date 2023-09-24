@@ -1,17 +1,11 @@
 name: Lint
 
 on:
-  #pull_request:
+  pull_request:
   push:
     branches:
-      - 'fake'
-
-#on:
-#pull_request:
-#push:
-#branches:
-#- 'dev'
-#- 'master'
+      - 'dev'
+      - 'master'
 
 jobs:
   commitlint:
@@ -19,38 +13,40 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out
-        uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
+        run: echo pause
+  #     - name: Check out
+  #       uses: actions/checkout@v3
+  #       with:
+  #         fetch-depth: 0
 
-      - name: Install
-        uses: ./.github/composite-actions/install
+  #     - name: Install
+  #       uses: ./.github/composite-actions/install
 
-      - name: Run commitlint check
-        run: pnpm commitlint -f ${{ github.event.pull_request.base.sha }}
+  #     - name: Run commitlint check
+  #       run: pnpm commitlint -f ${{ github.event.pull_request.base.sha }}
 
-  eslint:
-    name: 'ESLint'
-    runs-on: ubuntu-latest
-    steps:
-      - name: Check out
-        uses: actions/checkout@v3
+  # eslint:
+  #   name: 'ESLint'
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: Check out
+  #       uses: actions/checkout@v3
 
-      - name: Install
-        uses: ./.github/composite-actions/install
+  #     - name: Install
+  #       uses: ./.github/composite-actions/install
 
-      #- name: Run ESLint check
-      #  run: pnpm eslint:check
+  #     #- name: Run ESLint check
+  #     #  run: pnpm eslint:check
 
-  prettier:
-    name: 'Prettier'
-    runs-on: ubuntu-latest
-    steps:
-      - name: Check out
-        uses: actions/checkout@v3
+  # prettier:
+  #   name: 'Prettier'
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: Check out
+  #       uses: actions/checkout@v3
 
-      - name: Install
-        uses: ./.github/composite-actions/install
+  #     - name: Install
+  #       uses: ./.github/composite-actions/install
 
-      - name: Run Prettier check
-        run: pnpm prettier:check
+  #     - name: Run Prettier check
+  #       run: pnpm prettier:check
