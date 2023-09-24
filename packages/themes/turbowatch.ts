@@ -1,7 +1,5 @@
 import { watch } from 'turbowatch';
 
-const tsConfigPath = 'tsconfig.build.json';
-
 void watch({
   project: __dirname,
   triggers: [
