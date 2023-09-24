@@ -1,5 +1,11 @@
 name: Lint
 
+on:
+  #pull_request:
+  push:
+    branches:
+      - 'fake'
+
 #on:
 #pull_request:
 #push:
