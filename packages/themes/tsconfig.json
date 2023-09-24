@@ -12,5 +12,5 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["turbowatch.ts", "src/**/*.ts", "src/**/*.tsx", "scripts/**/*"]
+  "include": ["src/**/*.ts", "src/**/*.tsx", "scripts/**/*"]
 }
