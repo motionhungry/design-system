@@ -13,8 +13,8 @@ void watch({
       ],
       name: 'build',
       onChange: async ({ spawn }) => {
-        await spawn`tsc --project ${tsConfigPath}`;
-        await spawn`tsc-alias -p ${tsConfigPath}`;
+        await spawn`tsc`;
+        await spawn`tsc-alias`;
       },
     },
   ],
