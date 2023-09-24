@@ -8,12 +8,13 @@
   "main": "index.js",
   "scripts": {
     "clean": "rimraf node_modules .turbo",
-    "dev": "storybook dev",
+    "dev": "storybook dev -p 6006",
     "storybook-build": "storybook build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
     "@vanilla-extract/css": "^1.12.0",
+    "@veer-ui/blocks": "workspace:*",
     "@veer-ui/icons": "workspace:*",
     "@veer-ui/system": "workspace:*",
     "@veer-ui/themes": "workspace:*",
