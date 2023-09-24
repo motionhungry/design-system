@@ -1,5 +1,13 @@
 # @veer/themes
 
+## 0.1.4
+
+### Patch Changes
+
+- 21371a1: Add App Block
+- Updated dependencies [21371a1]
+  - @veer-ui/system@0.1.4
+
 ## 0.1.3
 
 ### Patch Changes
