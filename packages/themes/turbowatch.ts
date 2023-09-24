@@ -1,5 +1,7 @@
 import { watch } from 'turbowatch';
 
+const tsConfigPath = 'tsconfig.build.json';
+
 void watch({
   project: __dirname,
   triggers: [
@@ -12,7 +14,7 @@ void watch({
       name: 'build',
       onChange: async ({ spawn }) => {
         await spawn`tsc`;
-        await spawn`tsc-alias`;
+        await spawn`tsc-alias -p ${tsConfigPath}`;
       },
     },
   ],
