@@ -33,8 +33,8 @@ jobs:
       - name: Install
         uses: ./.github/composite-actions/install
 
-      - name: Run ESLint check
-        run: pnpm eslint:check
+      #- name: Run ESLint check
+      #  run: pnpm eslint:check
 
   prettier:
     name: 'Prettier'

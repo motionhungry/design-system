@@ -1,7 +1,7 @@
 {
-  "name": "@veer-ui/system",
-  "version": "0.1.3",
-  "description": "Veer React Component Library",
+  "name": "@veer-ui/blocks",
+  "version": "0.0.0",
+  "description": "Veer Blocks",
   "keywords": [],
   "license": "MIT",
   "author": "Kyle Getrost <kyle@motionhungry.com>",
@@ -10,16 +10,6 @@
       "import": "./dist/index.js",
       "require": "./dist/index.js",
       "types": "./dist/index.d.ts"
-    },
-    "./contract.css": {
-      "import": "./dist/style/contract.css.js",
-      "require": "./dist/style/contract.css.js",
-      "types": "./dist/style/contract.css.d.ts"
-    },
-    "./tokens": {
-      "import": "./dist/style/tokens.js",
-      "require": "./dist/style/tokens.js",
-      "types": "./dist/style/tokens.d.ts"
     }
   },
   "main": "./dist/index.js",
@@ -34,18 +24,18 @@
     "dev": "turbowatch ./turbowatch.ts",
     "eslint:check": "eslint --max-warnings=0 .",
     "eslint:fix": "eslint --fix --max-warnings=0 .",
-    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "test": "jest"
   },
   "dependencies": {
+    "@uidotdev/usehooks": "^2.3.1",
     "@vanilla-extract/css": "^1.12.0",
     "@vanilla-extract/dynamic": "^2.0.3",
     "@vanilla-extract/recipes": "^0.5.0",
     "@vanilla-extract/sprinkles": "^1.6.1",
-    "clsx": "^2.0.0",
+    "@veer-ui/system": "workspace:*",
+    "lodash": "^4.17.21",
     "react": "^18.2.0",
-    "react-aria": "^3.26.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
@@ -55,6 +45,7 @@
     "@tsconfig/next": "^2.0.0",
     "@tsconfig/strictest": "^2.0.2",
     "@types/jest": "^29.5.3",
+    "@types/lodash": "^4.14.199",
     "@types/node": "^17.0.12",
     "@types/prop-types": "^15.7.5",
     "@types/react": "^18.2.14",

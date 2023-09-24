@@ -15,7 +15,7 @@
   "scripts": {
     "build": "./scripts/build.sh",
     "clean": "rimraf dist .turbo node_modules",
-    "dev": "./scripts/dev.sh",
+    "dev": "turbowatch ./turbowatch.ts",
     "eslint:check": "eslint --max-warnings=0 .",
     "eslint:fix": "eslint --fix --max-warnings=0 .",
     "test": "jest"

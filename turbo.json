@@ -10,6 +10,7 @@
       "cache": false
     },
     "dev": {
+      "cache": false,
       "persistent": true
     },
     "eslint:check": {},

@@ -16,10 +16,15 @@ const a = style({
   color: 'inherit',
 });
 
+const button = style({
+  background: 'none',
+});
+
 export const elementResets: Partial<
   Record<keyof JSX.IntrinsicElements, string>
 > = {
   ul: list,
   ol: list,
-  a: a,
+  a,
+  button,
 };

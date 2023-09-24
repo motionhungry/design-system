@@ -8,6 +8,7 @@ export type BoxProps = {
   as?: ElementType;
   children?: React.ReactNode;
   className?: string;
+  onClick?: () => void;
   style?: React.CSSProperties;
 } & Sprinkles;
 
@@ -18,6 +19,7 @@ const Box = forwardRef(
       children,
       display = 'block',
       className: fwdClassName,
+      onClick,
       style,
       ...props
     }: BoxProps,
@@ -33,7 +35,12 @@ const Box = forwardRef(
     });
 
     return (
-      <Component className={className} style={style} ref={ref}>
+      <Component
+        className={className}
+        onClick={onClick}
+        style={style}
+        ref={ref}
+      >
         {children}
       </Component>
     );
