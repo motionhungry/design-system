@@ -1,5 +1,4 @@
 import { Grid } from '@veer-ui/system';
-import { defaultTokens } from '@veer-ui/system/tokens';
 import type { Meta, StoryObj } from '@storybook/react';
 
 const meta: Meta<typeof Grid> = {

@@ -105,6 +105,10 @@ export const defaultTokens = {
 
   fontFamily: 'Gotham',
 
+  grid: {
+    columnGap: '24px',
+  },
+
   layout: {
     maxWidth: '1400px',
   },
