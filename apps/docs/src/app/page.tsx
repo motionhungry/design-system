@@ -1,15 +1,36 @@
-import { Box, FlexBox, Block, Text } from '@veer-ui/system';
+import { Box, FlexBox, Grid, Block, Text } from '@veer-ui/system';
 
 export default function Page(): JSX.Element {
   return (
-    <Block backgroundColor="primary.50" justifyContent="center" fullHeight>
-      <FlexBox alignItems="center" justifyContent="center">
-        <Box>
-          <Text variant="h1" color="primary.700">
-            Motion Hungry
-          </Text>
-        </Box>
-      </FlexBox>
-    </Block>
+    <Box>
+      <Block backgroundColor="primary.50" justifyContent="center" fullHeight>
+        <FlexBox alignItems="center" justifyContent="center">
+          <Box>
+            <Text variant="h1" color="primary.700">
+              Hero
+            </Text>
+          </Box>
+        </FlexBox>
+      </Block>
+      <Block>
+        <Grid
+          templateColumns={{
+            medium: 'repeat(2, 1fr)',
+            large: 'repeat(3, 1fr)',
+            xlarge: 'repeat(4, 1fr)',
+            xxlarge: 'repeat(8, 1fr)',
+          }}
+        >
+          <Box backgroundColor="secondary.50">1</Box>
+          <Box backgroundColor="secondary.200">2</Box>
+          <Box backgroundColor="secondary.300">3</Box>
+          <Box backgroundColor="secondary.400">4</Box>
+          <Box backgroundColor="secondary.400">5</Box>
+          <Box backgroundColor="secondary.400">6</Box>
+          <Box backgroundColor="secondary.400">7</Box>
+          <Box backgroundColor="secondary.400">8</Box>
+        </Grid>
+      </Block>
+    </Box>
   );
 }

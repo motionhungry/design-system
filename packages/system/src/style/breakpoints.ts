@@ -1,4 +1,6 @@
-const screenSizes = {
+import type { ScreenSize } from './types';
+
+export const screenSizes: Record<ScreenSize, string> = {
   xsmall: '0px',
   small: '576px',
   medium: '768px',
