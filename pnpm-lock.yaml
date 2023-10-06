@@ -50,6 +50,9 @@ importers:
 
   apps/docs:
     dependencies:
+      '@veer-ui/blocks':
+        specifier: workspace:*
+        version: link:../../packages/blocks
       '@veer-ui/icons':
         specifier: workspace:*
         version: link:../../packages/icons
