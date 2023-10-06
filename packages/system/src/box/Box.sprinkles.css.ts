@@ -1,8 +1,10 @@
 import { createSprinkles, defineProperties } from '@vanilla-extract/sprinkles';
 
-import { spaceProps, colorProps } from '@/style';
+import { spaceProps, colorProps, breakpoints } from '@/style';
 
 const boxProps = defineProperties({
+  conditions: breakpoints,
+  defaultCondition: 'small',
   properties: {
     display: ['block', 'inline-block'],
   },

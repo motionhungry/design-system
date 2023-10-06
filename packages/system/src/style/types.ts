@@ -1,7 +1,1 @@
-export type ScreenSize =
-  | 'xsmall'
-  | 'small'
-  | 'medium'
-  | 'large'
-  | 'xlarge'
-  | 'xxlarge';
+export type ScreenSize = 'small' | 'mobile' | 'tablet' | 'desktop';

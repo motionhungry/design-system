@@ -3,18 +3,14 @@ import type { ScreenSize } from '@/style/types';
 import { useMemo } from 'react';
 import {
   className,
-  templateColsXSmall,
   templateColsSmall,
-  templateColsMedium,
-  templateColsLarge,
-  templateColsXLarge,
-  templateColsXXLarge,
-  rowGapXSmall,
+  templateColsMobile,
+  templateColsTablet,
+  templateColsDesktop,
   rowGapSmall,
-  rowGapMedium,
-  rowGapLarge,
-  rowGapXLarge,
-  rowGapXXLarge,
+  rowGapMobile,
+  rowGapTablet,
+  rowGapDesktop,
 } from './Grid.styles.css';
 
 type ScreenSizeStyle = Partial<Record<ScreenSize, string>>;
@@ -33,33 +29,25 @@ export const Grid = ({
   rowGap: fwdGap,
 }: GridProps): JSX.Element => {
   const assignScreenSizeVars = () => {
-    const colXSmall = fwdCols?.xsmall ?? 'auto';
-    const colSmall = fwdCols?.small ?? colXSmall;
-    const colMedium = fwdCols?.medium ?? colSmall;
-    const colLarge = fwdCols?.large ?? colMedium;
-    const colXLarge = fwdCols?.xlarge ?? colLarge;
-    const colXXLarge = fwdCols?.xxlarge ?? colXLarge;
+    const colSmall = fwdCols?.small ?? 'auto';
+    const colMobile = fwdCols?.mobile ?? colSmall;
+    const colTablet = fwdCols?.tablet ?? colMobile;
+    const colDesktop = fwdCols?.desktop ?? colTablet;
 
-    const gXSmall = fwdGap?.xsmall ?? '0';
-    const gSmall = fwdGap?.small ?? rowGapXSmall;
-    const gMedium = fwdGap?.medium ?? rowGapSmall;
-    const gLarge = fwdGap?.large ?? rowGapMedium;
-    const gXLarge = fwdGap?.xlarge ?? rowGapLarge;
-    const gXXLarge = fwdGap?.xxlarge ?? rowGapXLarge;
+    const gSmall = fwdGap?.small ?? '0';
+    const gMobile = fwdGap?.mobile ?? rowGapSmall;
+    const gTablet = fwdGap?.tablet ?? rowGapTablet;
+    const gDesktop = fwdGap?.desktop ?? rowGapTablet;
 
     return assignInlineVars({
-      [templateColsXSmall]: colXSmall,
       [templateColsSmall]: colSmall,
-      [templateColsMedium]: colMedium,
-      [templateColsLarge]: colLarge,
-      [templateColsXLarge]: colXLarge,
-      [templateColsXXLarge]: colXXLarge,
-      [rowGapXSmall]: gXSmall,
+      [templateColsMobile]: colMobile,
+      [templateColsTablet]: colTablet,
+      [templateColsDesktop]: colDesktop,
       [rowGapSmall]: gSmall,
-      [rowGapMedium]: gMedium,
-      [rowGapLarge]: gLarge,
-      [rowGapXLarge]: gXLarge,
-      [rowGapXXLarge]: gXXLarge,
+      [rowGapMobile]: gMobile,
+      [rowGapTablet]: gTablet,
+      [rowGapDesktop]: gDesktop,
     });
   };
 

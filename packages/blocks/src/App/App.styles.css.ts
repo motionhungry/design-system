@@ -1,5 +1,5 @@
 import { style } from '@vanilla-extract/css';
-import { styleVars } from '@veer-ui/system/contract.css';
+import { globalVars } from '@veer-ui/system/contract.css';
 
 export const containerClass = style({
   position: 'relative',
@@ -7,7 +7,7 @@ export const containerClass = style({
 
 export const menuContainerClass = style({
   position: 'absolute',
-  right: styleVars.space[5],
-  top: styleVars.space[5],
+  right: globalVars.space.lg,
+  top: globalVars.space.lg,
   bottom: 0,
 });

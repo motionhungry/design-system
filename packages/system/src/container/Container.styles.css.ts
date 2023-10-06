@@ -1,23 +1,30 @@
 import { style } from '@vanilla-extract/css';
-import { sprinkles } from '@/box/Box.sprinkles.css';
-import { styleVars } from '@/style/contract.css';
+import { screenSizes } from '@/style';
+import { globalVars } from '@/style/contract.css';
 
 export const className = style([
-  sprinkles({
-    px: {
-      xsmall: 2,
-      small: 4,
-      medium: 4,
-      large: 8,
-      xlarge: 8,
-      xxlarge: 8,
-    },
-  }),
   {
     flexGrow: 1,
     margin: '0 auto',
-    maxWidth: styleVars.layout.maxWidth,
+    maxWidth: globalVars.layout.maxWidth,
+    paddingLeft: globalVars.layout.containerMargin.small,
+    paddingRight: globalVars.layout.containerMargin.small,
     position: 'relative',
     width: '100%',
+
+    '@media': {
+      [`screen and (min-width: ${screenSizes.mobile})`]: {
+        paddingLeft: globalVars.layout.containerMargin.mobile,
+        paddingRight: globalVars.layout.containerMargin.mobile,
+      },
+      [`screen and (min-width: ${screenSizes.tablet})`]: {
+        paddingLeft: globalVars.layout.containerMargin.tablet,
+        paddingRight: globalVars.layout.containerMargin.tablet,
+      },
+      [`screen and (min-width: ${screenSizes.desktop})`]: {
+        paddingLeft: globalVars.layout.containerMargin.desktop,
+        paddingRight: globalVars.layout.containerMargin.desktop,
+      },
+    },
   },
 ]);

@@ -1,5 +1,5 @@
 import { style, styleVariants } from '@vanilla-extract/css';
-import { styleVars } from '@veer-ui/system/contract.css';
+import { styleVars, globalVars } from '@veer-ui/system/contract.css';
 
 export const iconClass = style({
   width: 24,
@@ -7,7 +7,7 @@ export const iconClass = style({
 });
 
 const buttonBaseClass = style({
-  padding: styleVars.space[3],
+  padding: globalVars.space.md,
 });
 
 export const buttonClass = styleVariants({

@@ -10,7 +10,7 @@ const meta: Meta<typeof BackgroundMedia> = {
   decorators: [
     (Story) => (
       <Box
-        p={4}
+        p="xl"
         style={{ position: 'relative', width: '800px', height: '600px' }}
       >
         <Story />

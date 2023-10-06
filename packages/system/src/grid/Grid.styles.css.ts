@@ -2,45 +2,34 @@ import { style, createVar } from '@vanilla-extract/css';
 import { screenSizes } from '@/style';
 import { styleVars } from '@/style/contract.css';
 
-export const templateColsXSmall = createVar();
 export const templateColsSmall = createVar();
-export const templateColsMedium = createVar();
-export const templateColsLarge = createVar();
-export const templateColsXLarge = createVar();
-export const templateColsXXLarge = createVar();
+export const templateColsMobile = createVar();
+export const templateColsTablet = createVar();
+export const templateColsDesktop = createVar();
 
-export const rowGapXSmall = createVar();
 export const rowGapSmall = createVar();
-export const rowGapMedium = createVar();
-export const rowGapLarge = createVar();
-export const rowGapXLarge = createVar();
-export const rowGapXXLarge = createVar();
+export const rowGapMobile = createVar();
+export const rowGapTablet = createVar();
+export const rowGapDesktop = createVar();
 
 export const className = style({
   display: 'grid',
-  gridTemplateColumns: templateColsXSmall,
   columnGap: styleVars.grid.columnGap,
+  gridTemplateColumns: templateColsSmall,
+  rowGap: rowGapSmall,
 
   '@media': {
-    [`screen and (min-width: ${screenSizes.small})`]: {
-      gridTemplateColumns: templateColsSmall,
-      rowGap: rowGapSmall,
+    [`screen and (min-width: ${screenSizes.mobile})`]: {
+      gridTemplateColumns: templateColsMobile,
+      rowGap: rowGapMobile,
     },
-    [`screen and (min-width: ${screenSizes.medium})`]: {
-      gridTemplateColumns: templateColsMedium,
-      rowGap: rowGapMedium,
+    [`screen and (min-width: ${screenSizes.tablet})`]: {
+      gridTemplateColumns: templateColsTablet,
+      rowGap: rowGapTablet,
     },
-    [`screen and (min-width: ${screenSizes.large})`]: {
-      gridTemplateColumns: templateColsLarge,
-      rowGap: rowGapLarge,
-    },
-    [`screen and (min-width: ${screenSizes.xlarge})`]: {
-      gridTemplateColumns: templateColsXLarge,
-      rowGap: rowGapXLarge,
-    },
-    [`screen and (min-width: ${screenSizes.xxlarge})`]: {
-      gridTemplateColumns: templateColsXXLarge,
-      rowGap: rowGapXXLarge,
+    [`screen and (min-width: ${screenSizes.desktop})`]: {
+      gridTemplateColumns: templateColsDesktop,
+      rowGap: rowGapDesktop,
     },
   },
 });

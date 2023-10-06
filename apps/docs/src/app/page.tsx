@@ -12,31 +12,26 @@ export default function Page(): JSX.Element {
           </Box>
         </FlexBox>
       </Block>
-      <Block>
-        <Text variant="h2">Grid</Text>
+      <Block heading="Grid">
         <Grid
           templateColumns={{
-            medium: 'repeat(2, 1fr)',
-            large: 'repeat(3, 1fr)',
-            xlarge: 'repeat(4, 1fr)',
-            xxlarge: 'repeat(8, 1fr)',
+            mobile: 'repeat(2, 1fr)',
+            tablet: 'repeat(3, 1fr)',
+            desktop: 'repeat(6, 1fr)',
           }}
           rowGap={{
-            xxlarge: '48px',
-            xlarge: '32px',
-            large: '16px',
-            medium: '8px',
+            desktop: '32px',
+            tablet: '16px',
+            mobile: '8px',
             small: '4px',
           }}
         >
           <Box backgroundColor="secondary.50">1</Box>
-          <Box backgroundColor="secondary.200">2</Box>
-          <Box backgroundColor="secondary.300">3</Box>
-          <Box backgroundColor="secondary.400">4</Box>
+          <Box backgroundColor="secondary.100">2</Box>
+          <Box backgroundColor="secondary.200">3</Box>
+          <Box backgroundColor="secondary.300">4</Box>
           <Box backgroundColor="secondary.400">5</Box>
-          <Box backgroundColor="secondary.400">6</Box>
-          <Box backgroundColor="secondary.400">7</Box>
-          <Box backgroundColor="secondary.400">8</Box>
+          <Box backgroundColor="secondary.500">6</Box>
         </Grid>
       </Block>
     </Box>

@@ -1,11 +1,13 @@
 import { assignInlineVars } from '@vanilla-extract/dynamic';
 import type { ElementType } from 'react';
 import { BackgroundMedia } from '@/bg-media';
+import { Box } from '@/box';
 import { Container } from '@/container';
 import { FlexBox } from '@/flexbox';
+import { Text } from '@/text';
 import type { Sprinkles as FlexBoxSprinkles } from '@/flexbox/FlexBox.sprinkles.css';
 import type { Sprinkles as BoxSprinkles } from '@/box/Box.sprinkles.css';
-import { className, minHeight } from './Block.styles.css';
+import { className, minHeight, headingClass } from './Block.styles.css';
 
 type BlockProps = {
   as?: ElementType;
@@ -15,6 +17,7 @@ type BlockProps = {
   backgroundTintOpacity?: BoxSprinkles['opacity'];
   children: React.ReactNode;
   fullHeight?: boolean;
+  heading?: string;
   justifyContent?: FlexBoxSprinkles['justifyContent'];
 } & Pick<BoxSprinkles, 'backgroundColor' | 'bgColor' | 'color'>;
 
@@ -29,6 +32,7 @@ const Block = ({
   children,
   color,
   fullHeight = false,
+  heading,
   justifyContent,
 }: BlockProps): JSX.Element => {
   // Prevent the background color from being overlayed on-top of video or image.
@@ -55,7 +59,14 @@ const Block = ({
           videoSrc={backgroundVideoSrc}
         />
       }
-      <Container justifyContent={justifyContent}>{children}</Container>
+      <Container justifyContent={justifyContent}>
+        {heading && (
+          <Box className={headingClass}>
+            <Text variant="h2">{heading}</Text>
+          </Box>
+        )}
+        {children}
+      </Container>
     </FlexBox>
   );
 };
