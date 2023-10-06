@@ -1,5 +1,11 @@
 # @veer/system
 
+## 0.3.0
+
+### Minor Changes
+
+- 86a5fea: Added grid, TextBlock and new layout fixes.
+
 ## 0.2.0
 
 ### Minor Changes
