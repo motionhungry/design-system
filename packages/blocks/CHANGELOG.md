@@ -1,5 +1,16 @@
 # @veer-ui/blocks
 
+## 0.3.0
+
+### Minor Changes
+
+- 86a5fea: Added grid, TextBlock and new layout fixes.
+
+### Patch Changes
+
+- Updated dependencies [86a5fea]
+  - @veer-ui/system@0.3.0
+
 ## 0.2.0
 
 ### Minor Changes
