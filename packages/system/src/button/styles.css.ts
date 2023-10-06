@@ -11,7 +11,7 @@ export const styles = recipe({
     borderRadius: styleVars.borderRadius.medium,
     color: styleVars.legacyPalette.neutral.white,
     display: 'inline-block',
-    fontFamily: styleVars.fontFamily,
+    fontFamily: globalVars.font.fontFamily,
     textDecoration: 'none',
   },
   variants: {
