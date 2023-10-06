@@ -103,51 +103,15 @@ export const defaultTokens = {
     },
   },
 
-  fontFamily: 'Gotham',
-
-  layout: {
-    maxWidth: '1400px',
+  grid: {
+    columnGap: '24px',
   },
 
   legacyPalette,
 
   palette,
 
-  space: {
-    0: '0px',
-    0.5: '4px',
-    1: '8px',
-    1.5: '12px',
-    2: '16px',
-    3: '24px',
-    4: '32px',
-    5: '40px',
-    6: '48px',
-    7: '56px',
-    8: '64px',
-    9: '72px',
-    10: '80px',
-    11: '88px',
-    12: '96px',
-  },
-
   typography: {
-    fontSize: {
-      h1: '72px',
-      h2: '48px',
-      h3: '32px',
-      h4: '24px',
-      'body-large': '24px',
-      'body-medium': '20px',
-      'body-small': '16px',
-    },
-    fontWeight: {
-      light: '300',
-      normal: '400',
-      medium: '500',
-      'semi-bold': '600',
-      bold: '700',
-    },
     button: {
       small: {
         fontSize: '16px',
@@ -169,5 +133,63 @@ export const defaultTokens = {
 
   zIndex: {
     backgroundImage: '-10',
+  },
+};
+
+export const defaultGlobalTokens = {
+  font: {
+    fontFamily: 'Gotham',
+    size: '16px',
+  },
+  layout: {
+    maxWidth: '1280px',
+    containerMargin: {
+      small: '1.5rem',
+      mobile: '2rem',
+      tablet: '2.5rem',
+      desktop: '2.5rem',
+    },
+  },
+  space: {
+    xxl: '4rem',
+    xl: '3rem',
+    lg: '2rem',
+    md: '1.5rem',
+    sm: '1rem',
+    xs: '0.5rem',
+    xxs: '0.25rem',
+  },
+  typography: {
+    fontSize: {
+      h1: '5rem',
+      h2: '3.375rem',
+      h3: '2.25rem',
+      h4: '1.5rem',
+      h5: '1rem',
+      bodyXL: '3.375rem',
+      bodyLG: '2.25rem',
+      bodyMD: '1.5rem',
+      bodySM: '1rem',
+      bodyXS: '0.875rem',
+    },
+    lineHeight: {
+      h1: '6.5rem',
+      h2: '4.5rem',
+      h3: '3rem',
+      h4: '2rem',
+      h5: '1.75rem',
+      bodyXL: '4.5rem',
+      bodyLG: '3rem',
+      bodyMD: '2rem',
+      bodySM: '1.75rem',
+      bodyXS: '0.875rem',
+    },
+    fontWeight: {
+      light: '300',
+      normal: '400',
+      medium: '500',
+      semiBold: '600',
+      bold: '700',
+    },
   },
 };

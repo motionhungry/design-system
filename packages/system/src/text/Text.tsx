@@ -1,30 +1,33 @@
-import type { TextProps } from './Text.types';
-
 import { atoms } from '@/style/atoms';
+import type { TextProps } from './Text.types';
 import { sprinkles } from './Text.sprinkles.css';
-import { responsiveFontSize, responsiveFontWeight } from './utils';
+import { className as textClassName } from './Text.styles.css';
+import { getResponsiveVariant } from './utils';
 
 export const Text = ({
   as,
-  variant = 'body-medium',
+  variant = 'bodyMD',
   children,
   color = 'neutral.950',
-  fontWeight: fontWeightOverride,
   ...props
 }: TextProps): JSX.Element => {
-  const fontSize = responsiveFontSize(variant);
-  const fontWeight = fontWeightOverride ?? responsiveFontWeight(variant);
-
   const Component = as
     ? as
-    : ['h1', 'h2', 'h3', 'h4'].includes(variant)
+    : ['h1', 'h2', 'h3', 'h4', 'h5'].includes(variant)
     ? (variant as React.ElementType)
     : 'span';
 
+  const responsiveVariant = getResponsiveVariant(variant);
+
   const className = atoms({
-    className: [],
+    className: [textClassName[variant]],
     reset: Component,
-    sprinklesClassName: sprinkles({ color, fontSize, fontWeight, ...props }),
+    sprinklesClassName: sprinkles({
+      color,
+      fontSize: responsiveVariant,
+      lineHeight: responsiveVariant,
+      ...props,
+    }),
   });
 
   return <Component className={className}>{children}</Component>;

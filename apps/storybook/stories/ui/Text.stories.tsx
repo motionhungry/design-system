@@ -1,5 +1,5 @@
 import { Text } from '@veer-ui/system';
-import { defaultTokens } from '@veer-ui/system/tokens';
+import { defaultTokens, defaultGlobalTokens } from '@veer-ui/system/tokens';
 import type { Meta, StoryObj } from '@storybook/react';
 
 const colors = Object.keys(defaultTokens.palette);
@@ -18,11 +18,7 @@ const meta: Meta<typeof Text> = {
     },
     variant: {
       control: 'select',
-      options: Object.keys(defaultTokens.typography.fontSize),
-    },
-    fontWeight: {
-      control: 'select',
-      options: ['bold', 'semi-bold', 'medium', 'normal', 'light'],
+      options: Object.keys(defaultGlobalTokens.typography.fontSize),
     },
     textAlign: {
       control: 'select',
@@ -71,23 +67,44 @@ export const Heading4: Story = {
   },
 };
 
+export const Heading5: Story = {
+  args: {
+    children: 'Text',
+    variant: 'h5',
+  },
+};
+
+export const BodyXL: Story = {
+  args: {
+    children: 'Text',
+    variant: 'bodyXL',
+  },
+};
+
 export const BodyLarge: Story = {
   args: {
     children: 'Text',
-    variant: 'body-large',
+    variant: 'bodyLG',
   },
 };
 
 export const BodyMedium: Story = {
   args: {
     children: 'Text',
-    variant: 'body-medium',
+    variant: 'bodyMD',
   },
 };
 
 export const BodySmall: Story = {
   args: {
     children: 'Text',
-    variant: 'body-small',
+    variant: 'bodySM',
+  },
+};
+
+export const BodyXS: Story = {
+  args: {
+    children: 'Text',
+    variant: 'bodyXS',
   },
 };

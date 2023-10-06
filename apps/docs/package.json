@@ -9,6 +9,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@veer-ui/blocks": "workspace:*",
     "@veer-ui/icons": "workspace:*",
     "@veer-ui/system": "workspace:*",
     "@veer-ui/themes": "workspace:*",

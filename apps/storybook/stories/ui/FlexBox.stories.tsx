@@ -1,5 +1,5 @@
 import { FlexBox } from '@veer-ui/system';
-import { defaultTokens } from '@veer-ui/system/tokens';
+import { defaultTokens, defaultGlobalTokens } from '@veer-ui/system/tokens';
 import type { Meta, StoryObj } from '@storybook/react';
 
 const colors = Object.keys(defaultTokens.palette);
@@ -14,7 +14,7 @@ const meta: Meta<typeof FlexBox> = {
     },
     padding: {
       control: 'select',
-      options: Object.keys(defaultTokens.space),
+      options: Object.keys(defaultGlobalTokens.space),
     },
     flexDirection: {
       control: 'radio',
@@ -42,7 +42,7 @@ export default meta;
 export const Default: Story = {
   args: {
     children: 'Flex Box',
-    padding: 0,
+    padding: undefined,
     flexDirection: 'row',
   },
 };

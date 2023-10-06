@@ -1,4 +1,4 @@
-import { styleVars } from '@/style/contract.css';
+import { styleVars, globalVars } from '@/style/contract.css';
 import { recipe } from '@vanilla-extract/recipes';
 
 const { button: buttonVars } = styleVars.components;
@@ -51,24 +51,24 @@ export const styles = recipe({
       small: {
         fontSize: styleVars.typography.button.small.fontSize,
         fontWeight: styleVars.typography.button.small.fontWeight,
-        height: styleVars.space[5],
-        lineHeight: styleVars.space[5],
-        padding: `0 ${styleVars.space['1.5']}`,
+        height: '40px',
+        lineHeight: '40px',
+        padding: `0 ${globalVars.space.xs}`,
       },
       medium: {
         fontSize: styleVars.typography.button.medium.fontSize,
         fontWeight: styleVars.typography.button.medium.fontWeight,
-        height: styleVars.space[6],
-        lineHeight: styleVars.space[6],
-        padding: `0 ${styleVars.space[2]}`,
+        height: globalVars.space.xl,
+        lineHeight: globalVars.space.xl,
+        padding: `0 ${globalVars.space.sm}`,
       },
       large: {
         borderRadius: styleVars.borderRadius.medium,
         fontSize: styleVars.typography.button.large.fontSize,
         fontWeight: styleVars.typography.button.large.fontWeight,
-        height: styleVars.space[7],
-        lineHeight: styleVars.space[7],
-        padding: `0 ${styleVars.space[3]}`,
+        height: '56px',
+        lineHeight: '56px',
+        padding: `0 ${globalVars.space.md}`,
       },
     },
   },
