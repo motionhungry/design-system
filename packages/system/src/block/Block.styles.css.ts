@@ -1,11 +1,9 @@
 import { createVar, style } from '@vanilla-extract/css';
 import { sprinkles } from '@/box/Box.sprinkles.css';
-import { screenSizes } from '@/style';
-import vars from '@/style/contract.css';
 
 export const minHeight = createVar();
 
-export const className = style([
+export const block = style([
   sprinkles({
     py: {
       small: 'lg',
@@ -19,12 +17,3 @@ export const className = style([
     position: 'relative',
   },
 ]);
-
-export const headingClass = style({
-  paddingBottom: vars.space.lg,
-  '@media': {
-    [`screen and (min-width: ${screenSizes.tablet})`]: {
-      paddingBottom: vars.space.xl,
-    },
-  },
-});

@@ -16,10 +16,10 @@
       "require": "./dist/style/contract.css.js",
       "types": "./dist/style/contract.css.d.ts"
     },
-    "./tokens": {
-      "import": "./dist/style/tokens.js",
-      "require": "./dist/style/tokens.js",
-      "types": "./dist/style/tokens.d.ts"
+    "./style.css": {
+      "import": "./dist/style.css.js",
+      "require": "./dist/style.css.js",
+      "types": "./dist/style.css.d.ts"
     }
   },
   "main": "./dist/index.js",

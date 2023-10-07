@@ -1,7 +1,7 @@
 import { Box } from '@/box';
 import { FlexBox } from '@/flexbox';
 import type { Sprinkles as FlexBoxSprinkles } from '@/flexbox/FlexBox.sprinkles.css';
-import { className } from './Container.styles.css';
+import { container } from './Container.styles.css';
 
 export type ContainerProps = {
   alignItems?: FlexBoxSprinkles['alignItems'];
@@ -20,13 +20,13 @@ const Container = ({
         alignItems={alignItems}
         flexDirection="column"
         justifyContent={justifyContent}
-        className={className}
+        className={container}
       >
         {children}
       </FlexBox>
     );
   }
-  return <Box className={className}>{children}</Box>;
+  return <Box className={container}>{children}</Box>;
 };
 
 Container.displayName = 'Container';

@@ -2,7 +2,7 @@ import { style } from '@vanilla-extract/css';
 import { screenSizes } from '@/style';
 import vars from '@/style/contract.css';
 
-export const className = style([
+export const container = style([
   {
     flexGrow: 1,
     margin: '0 auto',
