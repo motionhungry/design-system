@@ -1,8 +1,8 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { BackgroundMedia, Box, Text } from '@veer-ui/system';
-import { defaultTokens } from '@veer-ui/system/tokens';
+import { defaultPalette } from '@veer-ui/themes';
 
-const colors = Object.keys(defaultTokens.palette);
+const colors = Object.keys(defaultPalette);
 
 const meta: Meta<typeof BackgroundMedia> = {
   title: 'ui/BackgroundMedia',
@@ -14,7 +14,7 @@ const meta: Meta<typeof BackgroundMedia> = {
         style={{ position: 'relative', width: '800px', height: '600px' }}
       >
         <Story />
-        <Text align="center" color="bw.0" variant="h1">
+        <Text align="center" color="black" variant="h1">
           Background Media
         </Text>
       </Box>

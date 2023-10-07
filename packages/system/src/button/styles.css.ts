@@ -1,17 +1,17 @@
-import { styleVars, globalVars } from '@/style/contract.css';
+import vars from '@/style/contract.css';
 import { recipe } from '@vanilla-extract/recipes';
 
-const { button: buttonVars } = styleVars.components;
+const { button: buttonVars } = vars.components;
 
 const insetShadow = '0px 0px 0px 2px rgba(255, 255, 255, 0.15) inset';
 
 export const styles = recipe({
   base: {
     border: 0,
-    borderRadius: styleVars.borderRadius.medium,
-    color: styleVars.legacyPalette.neutral.white,
+    borderRadius: vars.borderRadius.medium,
+    color: buttonVars.primary.default.color,
     display: 'inline-block',
-    fontFamily: globalVars.font.fontFamily,
+    fontFamily: vars.font.fontFamily,
     textDecoration: 'none',
   },
   variants: {
@@ -38,37 +38,34 @@ export const styles = recipe({
         boxShadow: `${insetShadow}`,
       },
       low: {
-        boxShadow: `${insetShadow}, ${styleVars.elevation.low}`,
+        boxShadow: `${insetShadow}, ${vars.elevation.low}`,
       },
       mid: {
-        boxShadow: `${insetShadow}, ${styleVars.elevation.mid}`,
+        boxShadow: `${insetShadow}, ${vars.elevation.mid}`,
       },
       high: {
-        boxShadow: `${insetShadow}, ${styleVars.elevation.high}`,
+        boxShadow: `${insetShadow}, ${vars.elevation.high}`,
       },
     },
     size: {
       small: {
-        fontSize: styleVars.typography.button.small.fontSize,
-        fontWeight: styleVars.typography.button.small.fontWeight,
+        fontSize: buttonVars.typography.small.fontSize,
         height: '40px',
         lineHeight: '40px',
-        padding: `0 ${globalVars.space.xs}`,
+        padding: `0 ${vars.space.xs}`,
       },
       medium: {
-        fontSize: styleVars.typography.button.medium.fontSize,
-        fontWeight: styleVars.typography.button.medium.fontWeight,
-        height: globalVars.space.xl,
-        lineHeight: globalVars.space.xl,
-        padding: `0 ${globalVars.space.sm}`,
+        fontSize: buttonVars.typography.medium.fontSize,
+        height: vars.space.xl,
+        lineHeight: vars.space.xl,
+        padding: `0 ${vars.space.sm}`,
       },
       large: {
-        borderRadius: styleVars.borderRadius.medium,
-        fontSize: styleVars.typography.button.large.fontSize,
-        fontWeight: styleVars.typography.button.large.fontWeight,
+        borderRadius: vars.borderRadius.medium,
+        fontSize: buttonVars.typography.large.fontSize,
         height: '56px',
         lineHeight: '56px',
-        padding: `0 ${globalVars.space.md}`,
+        padding: `0 ${vars.space.md}`,
       },
     },
   },

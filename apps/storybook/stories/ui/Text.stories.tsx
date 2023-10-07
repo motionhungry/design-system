@@ -1,8 +1,8 @@
 import { Text } from '@veer-ui/system';
-import { defaultTokens, defaultGlobalTokens } from '@veer-ui/system/tokens';
+import { defaultPalette, defaultGlobalTokens } from '@veer-ui/themes';
 import type { Meta, StoryObj } from '@storybook/react';
 
-const colors = Object.keys(defaultTokens.palette);
+const colors = Object.keys(defaultPalette);
 
 const meta: Meta<typeof Text> = {
   title: 'ui/Text',

@@ -1,7 +1,7 @@
 import { style } from '@vanilla-extract/css';
-import { globalVars } from '@veer-ui/system/contract.css';
+import vars from '@veer-ui/system/contract.css';
 
 export const className = style({
   position: 'sticky',
-  top: globalVars.space.lg,
+  top: vars.space.lg,
 });

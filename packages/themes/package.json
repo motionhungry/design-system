@@ -6,8 +6,21 @@
   "license": "MIT",
   "author": "Kyle Getrost <kyle@motionhungry.com>",
   "exports": {
-    "./default.css": "./dist/default.css.js",
-    "./reset.css": "./dist/reset.css.js"
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./default.css": {
+      "import": "./dist/themes/default.css.js",
+      "require": "./dist/themes/default.css.js",
+      "types": "./dist/themes/default.css.d.ts"
+    },
+    "./reset.css": {
+      "import": "./dist/reset.css.js",
+      "require": "./dist/reset.css.js",
+      "types": "./dist/reset.css.d.ts"
+    }
   },
   "files": [
     "./dist/**"

@@ -1,8 +1,8 @@
 import { Block } from '@veer-ui/system';
-import { defaultTokens } from '@veer-ui/system/tokens';
+import { defaultPalette } from '@veer-ui/themes';
 import type { Meta, StoryObj } from '@storybook/react';
 
-const colors = Object.keys(defaultTokens.palette);
+const colors = Object.keys(defaultPalette);
 
 const meta: Meta<typeof Block> = {
   title: 'ui/Block',

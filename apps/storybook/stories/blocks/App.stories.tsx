@@ -9,14 +9,14 @@ const meta: Meta<typeof App> = {
   decorators: [
     (Story) => (
       <Box>
-        <Block justifyContent="center" backgroundColor="bw.1000" fullHeight>
-          <Text textAlign="center" variant="h1" color="bw.0">
+        <Block justifyContent="center" backgroundColor="black" fullHeight>
+          <Text textAlign="center" variant="h1" color="white">
             Start
           </Text>
         </Block>
         <Story />
-        <Block justifyContent="center" backgroundColor="bw.1000" fullHeight>
-          <Text textAlign="center" variant="h1" color="bw.0">
+        <Block justifyContent="center" backgroundColor="black" fullHeight>
+          <Text textAlign="center" variant="h1" color="white">
             End
           </Text>
         </Block>
