@@ -1,6 +1,6 @@
 import { defineProperties } from '@vanilla-extract/sprinkles';
 
-import { styleVars } from '@/style/contract.css';
+import vars from '@/style/contract.css';
 
 const opacity = Array(101)
   .fill(null)
@@ -15,8 +15,8 @@ const opacity = Array(101)
 
 export const colorProps = defineProperties({
   properties: {
-    backgroundColor: styleVars.palette,
-    color: styleVars.palette,
+    backgroundColor: vars.palette,
+    color: vars.palette,
     opacity,
   },
   shorthands: {

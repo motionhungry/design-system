@@ -3,12 +3,18 @@ import {
   createGlobalThemeContract,
 } from '@vanilla-extract/css';
 
-import { defaultTokens } from './tokens';
-
 export const globalVars = createGlobalThemeContract({
+  borderRadius: {
+    small: 'border-radius-small',
+    medium: 'border-radius-medium',
+    large: 'border-radius-large',
+  },
   font: {
     fontFamily: 'font-family',
     size: 'font-size',
+  },
+  grid: {
+    columnGap: 'grid-column-gap',
   },
   layout: {
     maxWidth: 'layout-max-width',
@@ -18,6 +24,43 @@ export const globalVars = createGlobalThemeContract({
       tablet: 'container-margin-tablet',
       desktop: 'container-margin-desktop',
     },
+  },
+  palette: {
+    white: 'palette-white',
+    black: 'palette-black',
+    'primary.50': 'palette-primary50',
+    'primary.100': 'palette-primary100',
+    'primary.200': 'palette-primary200',
+    'primary.300': 'palette-primary300',
+    'primary.400': 'palette-primary400',
+    'primary.500': 'palette-primary500',
+    'primary.600': 'palette-primary600',
+    'primary.700': 'palette-primary700',
+    'primary.800': 'palette-primary800',
+    'primary.900': 'palette-primary900',
+    'primary.950': 'palette-primary950',
+    'secondary.50': 'palette-secondary50',
+    'secondary.100': 'palette-secondary100',
+    'secondary.200': 'palette-secondary200',
+    'secondary.300': 'palette-secondary300',
+    'secondary.400': 'palette-secondary400',
+    'secondary.500': 'palette-secondary500',
+    'secondary.600': 'palette-secondary600',
+    'secondary.700': 'palette-secondary700',
+    'secondary.800': 'palette-secondary800',
+    'secondary.900': 'palette-secondary900',
+    'secondary.950': 'palette-secondary950',
+    'neutral.50': 'palette-neutral50',
+    'neutral.100': 'palette-neutral100',
+    'neutral.200': 'palette-neutral200',
+    'neutral.300': 'palette-neutral300',
+    'neutral.400': 'palette-neutral400',
+    'neutral.500': 'palette-neutral500',
+    'neutral.600': 'palette-neutral600',
+    'neutral.700': 'palette-neutral700',
+    'neutral.800': 'palette-neutral800',
+    'neutral.900': 'palette-neutral900',
+    'neutral.950': 'palette-neutral950',
   },
   space: {
     xxl: 'space-xxl',
@@ -61,6 +104,53 @@ export const globalVars = createGlobalThemeContract({
       bold: 'font-weight-bold',
     },
   },
+  zIndex: {
+    backgroundImage: 'z-index-background-image',
+  },
 });
 
-export const styleVars = createThemeContract(defaultTokens);
+export const themeVars = createThemeContract({
+  components: {
+    button: {
+      primary: {
+        default: {
+          background: null,
+          color: null,
+        },
+        disabled: {
+          background: null,
+          color: null,
+        },
+        hover: {
+          background: null,
+          color: null,
+        },
+        active: {
+          background: null,
+          color: null,
+        },
+      },
+      typography: {
+        small: {
+          fontSize: null,
+          lineHeight: null,
+        },
+        medium: {
+          fontSize: null,
+          lineHeight: null,
+        },
+        large: {
+          fontSize: null,
+          lineHeight: null,
+        },
+      },
+    },
+  },
+  elevation: {
+    low: null,
+    mid: null,
+    high: null,
+  },
+});
+
+export default { ...globalVars, ...themeVars };

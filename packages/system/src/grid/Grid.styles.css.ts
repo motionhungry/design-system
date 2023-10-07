@@ -1,6 +1,6 @@
 import { style, createVar } from '@vanilla-extract/css';
 import { screenSizes } from '@/style';
-import { styleVars } from '@/style/contract.css';
+import vars from '@/style/contract.css';
 
 export const templateColsSmall = createVar();
 export const templateColsMobile = createVar();
@@ -14,7 +14,7 @@ export const rowGapDesktop = createVar();
 
 export const className = style({
   display: 'grid',
-  columnGap: styleVars.grid.columnGap,
+  columnGap: vars.grid.columnGap,
   gridTemplateColumns: templateColsSmall,
   rowGap: rowGapSmall,
 

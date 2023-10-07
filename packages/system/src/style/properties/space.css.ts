@@ -1,16 +1,16 @@
 import { defineProperties } from '@vanilla-extract/sprinkles';
 
 import { breakpoints } from '@/style/breakpoints';
-import { globalVars } from '@/style/contract.css';
+import vars from '@/style/contract.css';
 
 export const spaceProps = defineProperties({
   conditions: breakpoints,
   defaultCondition: 'small',
   properties: {
-    paddingTop: globalVars.space,
-    paddingRight: globalVars.space,
-    paddingBottom: globalVars.space,
-    paddingLeft: globalVars.space,
+    paddingTop: vars.space,
+    paddingRight: vars.space,
+    paddingBottom: vars.space,
+    paddingLeft: vars.space,
   },
   shorthands: {
     padding: ['paddingTop', 'paddingRight', 'paddingBottom', 'paddingLeft'],

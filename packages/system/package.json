@@ -16,10 +16,10 @@
       "require": "./dist/style/contract.css.js",
       "types": "./dist/style/contract.css.d.ts"
     },
-    "./tokens": {
-      "import": "./dist/style/tokens.js",
-      "require": "./dist/style/tokens.js",
-      "types": "./dist/style/tokens.d.ts"
+    "./style.css": {
+      "import": "./dist/style.css.js",
+      "require": "./dist/style.css.js",
+      "types": "./dist/style.css.d.ts"
     }
   },
   "main": "./dist/index.js",
@@ -55,6 +55,7 @@
     "@tsconfig/next": "^2.0.0",
     "@tsconfig/strictest": "^2.0.2",
     "@types/jest": "^29.5.3",
+    "@types/lodash": "^4.14.199",
     "@types/node": "^17.0.12",
     "@types/prop-types": "^15.7.5",
     "@types/react": "^18.2.14",
