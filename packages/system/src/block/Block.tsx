@@ -8,6 +8,7 @@ import { Text } from '@/text';
 import type { Sprinkles as FlexBoxSprinkles } from '@/flexbox/FlexBox.sprinkles.css';
 import type { Sprinkles as BoxSprinkles } from '@/box/Box.sprinkles.css';
 import { className, minHeight, headingClass } from './Block.styles.css';
+import vars from '@/style/contract.css';
 
 type BlockProps = {
   as?: ElementType;
@@ -18,6 +19,7 @@ type BlockProps = {
   children: React.ReactNode;
   fullHeight?: boolean;
   heading?: string;
+  headingPaddingBottom?: string;
   justifyContent?: FlexBoxSprinkles['justifyContent'];
 } & Pick<BoxSprinkles, 'backgroundColor' | 'bgColor' | 'color'>;
 

@@ -111,6 +111,9 @@ export const globalVars = createGlobalThemeContract({
 
 export const themeVars = createThemeContract({
   components: {
+    block: {
+      backgroundColor: null,
+    },
     button: {
       primary: {
         default: {
