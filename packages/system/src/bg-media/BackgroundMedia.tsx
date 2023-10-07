@@ -2,9 +2,9 @@ import { Box } from '@/box';
 import type { Sprinkles as BoxSprinkles } from '@/box/Box.sprinkles.css';
 import { Image } from '@/image';
 import {
-  containerClassName,
-  tintClassName,
-  videoClassName,
+  backgroundMedia,
+  backgroundMediaTint,
+  backgroundMediaVideo,
 } from './BackgroundMedia.styles.css';
 
 export type BackgroundMedia = {
@@ -26,12 +26,12 @@ const BackgroundMedia = ({
   }
 
   return (
-    <Box className={containerClassName} {...props}>
+    <Box className={backgroundMedia} {...props}>
       {!!videoSrc && (
         <video
           aria-hidden="true"
           autoPlay
-          className={videoClassName}
+          className={backgroundMediaVideo}
           loop
           muted
           playsInline
@@ -43,7 +43,7 @@ const BackgroundMedia = ({
       {!!tintColor && (
         <Box
           backgroundColor={tintColor}
-          className={tintClassName}
+          className={backgroundMediaTint}
           opacity={tintOpacity}
         />
       )}

@@ -1,7 +1,7 @@
 import { style } from '@vanilla-extract/css';
 import vars from '@/style/contract.css';
 
-export const containerClassName = style({
+export const backgroundMedia = style({
   height: '100%',
   left: 0,
   overflow: 'hidden',
@@ -11,14 +11,14 @@ export const containerClassName = style({
   zIndex: vars.zIndex.backgroundImage,
 });
 
-export const videoClassName = style({
+export const backgroundMediaVideo = style({
   height: '100%',
   objectFit: 'cover',
   position: 'relative',
   width: '100%',
 });
 
-export const tintClassName = style({
+export const backgroundMediaTint = style({
   height: '100%',
   left: 0,
   position: 'absolute',

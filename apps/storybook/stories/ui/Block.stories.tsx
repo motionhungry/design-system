@@ -1,6 +1,9 @@
 import { Block } from '@veer-ui/system';
+import { defaultPalette } from '@veer-ui/themes';
 import type { Meta, StoryObj } from '@storybook/react';
 import { content, outer } from './style/Block.css';
+
+const colors = Object.keys(defaultPalette);
 
 const meta: Meta<typeof Block> = {
   title: 'ui/Block',
@@ -17,6 +20,10 @@ const meta: Meta<typeof Block> = {
     children: {
       control: false,
     },
+    backgroundColor: {
+      control: 'select',
+      options: colors,
+    },
     fullHeight: {},
     justifyContent: {
       control: 'select',
@@ -31,6 +38,7 @@ const meta: Meta<typeof Block> = {
       ],
     },
     backgroundImageSrc: { control: { type: 'text' } },
+    backgroundTintColor: { control: 'select', options: colors },
     backgroundTintOpacity: {
       control: { type: 'number', min: 0, max: 100, step: 1 },
     },
