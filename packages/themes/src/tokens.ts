@@ -1,5 +1,3 @@
-import vars from '@veer-ui/system/contract.css';
-
 export const defaultGlobalTokens = {
   borderRadius: {
     small: '0.25rem',
@@ -111,9 +109,6 @@ const shadowColor = '0deg 0% 0%';
 
 export const defaultTokens = {
   components: {
-    block: {
-      background: vars.palette.black,
-    },
     button: {
       primary: {
         default: {
