@@ -7,3 +7,4 @@ export * from './flexbox';
 export * from './grid';
 export * from './image';
 export * from './text';
+export { screenSizes } from './style/breakpoints';
