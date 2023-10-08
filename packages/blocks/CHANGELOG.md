@@ -1,5 +1,11 @@
 # @veer-ui/blocks
 
+## 0.4.2
+
+### Patch Changes
+
+- 9724387: fix bio images
+
 ## 0.4.1
 
 ### Patch Changes
