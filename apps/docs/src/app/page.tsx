@@ -1,5 +1,5 @@
 import { Box, FlexBox, Grid, Block, Text } from '@veer-ui/system';
-import { BioBlock, TextBlock } from '@veer-ui/blocks';
+import { BioBlock, CardBlock, TextBlock } from '@veer-ui/blocks';
 import { darkTheme, lightTheme } from '@veer-ui/themes/imajineer.css';
 
 const className = true ? darkTheme : lightTheme;
@@ -7,6 +7,38 @@ const className = true ? darkTheme : lightTheme;
 export default function Page(): JSX.Element {
   return (
     <Box>
+      <Box>
+        <CardBlock
+          heading="Our Services"
+          cards={[
+            {
+              body: 'Some text goes here',
+              imageComponent: <img src="https://picsum.photos/100" />,
+              title: 'Title',
+            },
+            {
+              body: 'Some text goes here',
+              imageComponent: <img src="https://picsum.photos/100" />,
+              title: 'Title',
+            },
+            {
+              body: 'Some text goes here',
+              imageComponent: <img src="https://picsum.photos/100" />,
+              title: 'Title',
+            },
+            {
+              body: 'Some text goes here',
+              imageComponent: <img src="https://picsum.photos/100" />,
+              title: 'Title',
+            },
+            {
+              body: 'Some text goes here',
+              imageComponent: <img src="https://picsum.photos/100" />,
+              title: 'Title',
+            },
+          ]}
+        />
+      </Box>
       <Box className={className}>
         <Block
           backgroundVideoSrc="http://localhost:6006/videos/lightning.mp4"

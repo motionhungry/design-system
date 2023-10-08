@@ -66,7 +66,7 @@ export const className = styleVariants({
     fontSize: vars.typography.fontSize.h5,
     lineHeight: vars.typography.lineHeight.h5,
     fontWeight: vars.typography.fontWeight.bold,
-    paddingBottom: vars.space.xs,
+    paddingBottom: vars.space.xxs,
   },
   bodyXL: {
     color: vars.textColor,
