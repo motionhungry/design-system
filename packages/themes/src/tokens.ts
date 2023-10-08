@@ -62,9 +62,6 @@ export const defaultGlobalTokens = {
       bold: '700',
     },
   },
-  zIndex: {
-    backgroundImage: '-10',
-  },
 };
 
 export const defaultPalette = {
@@ -108,6 +105,7 @@ export const defaultPalette = {
 const shadowColor = '0deg 0% 0%';
 
 export const defaultTokens = {
+  backgroundColor: defaultPalette['white'],
   headingColor: defaultPalette['black'],
   textColor: defaultPalette['black'],
   components: {
