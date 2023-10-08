@@ -1,5 +1,17 @@
 # @veer/themes
 
+## 0.4.0
+
+### Minor Changes
+
+- 000bced: Added BioBlock component to blocks
+
+### Patch Changes
+
+- Updated dependencies [000bced]
+  - @veer-ui/blocks@0.4.0
+  - @veer-ui/system@0.4.0
+
 ## 0.3.0
 
 ### Minor Changes

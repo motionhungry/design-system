@@ -1,5 +1,11 @@
 # @veer/system
 
+## 0.4.0
+
+### Minor Changes
+
+- 000bced: Added BioBlock component to blocks
+
 ## 0.3.0
 
 ### Minor Changes
