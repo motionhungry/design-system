@@ -85,6 +85,13 @@ export const lightTheme = createTheme(themeVars, {
   textColor: globalVars.palette['neutral.950'],
 });
 
+export const darkTheme = createTheme(themeVars, {
+  ...defaultTokens,
+  backgroundColor: globalVars.palette['neutral.950'],
+  headingColor: globalVars.palette['primary.500'],
+  textColor: globalVars.palette['white'],
+});
+
 globalStyle('body', {
   fontFamily: globalVars.font.fontFamily,
 });

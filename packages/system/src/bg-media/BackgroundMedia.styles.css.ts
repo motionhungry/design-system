@@ -1,5 +1,5 @@
 import { style } from '@vanilla-extract/css';
-import vars from '@/style/contract.css';
+import { zIndex } from '@/style/z-index';
 
 export const backgroundMedia = style({
   height: '100%',
@@ -8,7 +8,7 @@ export const backgroundMedia = style({
   position: 'absolute',
   top: 0,
   width: '100%',
-  zIndex: vars.zIndex.backgroundImage,
+  zIndex: zIndex.backgroundMedia,
 });
 
 export const backgroundMediaVideo = style({

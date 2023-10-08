@@ -23,7 +23,6 @@ type BlockProps = {
 
 const Block = ({
   as,
-  backgroundColor,
   backgroundTintOpacity,
   backgroundImageSrc,
   backgroundVideoSrc,
@@ -33,13 +32,9 @@ const Block = ({
   heading,
   justifyContent,
 }: BlockProps): JSX.Element => {
-  // Prevent the background color from being overlayed on top of video or image.
-  const showBgColor = !backgroundImageSrc && !backgroundVideoSrc;
-
   return (
     <FlexBox
       as={as}
-      backgroundColor={showBgColor ? backgroundColor : undefined}
       className={block}
       style={assignInlineVars({
         [minHeight]: fullHeight ? '100vh' : 'auto',
@@ -47,7 +42,6 @@ const Block = ({
       flexDirection="column"
     >
       <BackgroundMedia
-        backgroundColor={backgroundColor}
         imageSrc={backgroundImageSrc}
         tintColor={backgroundTintColor}
         tintOpacity={backgroundTintOpacity}

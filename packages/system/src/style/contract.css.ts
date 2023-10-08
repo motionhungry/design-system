@@ -104,12 +104,10 @@ export const globalVars = createGlobalThemeContract({
       bold: 'font-weight-bold',
     },
   },
-  zIndex: {
-    backgroundImage: 'z-index-background-image',
-  },
 });
 
 export const themeVars = createThemeContract({
+  backgroundColor: null,
   headingColor: null,
   textColor: null,
   components: {
