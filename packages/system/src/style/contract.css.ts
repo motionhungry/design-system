@@ -110,6 +110,8 @@ export const globalVars = createGlobalThemeContract({
 });
 
 export const themeVars = createThemeContract({
+  headingColor: null,
+  textColor: null,
   components: {
     button: {
       primary: {

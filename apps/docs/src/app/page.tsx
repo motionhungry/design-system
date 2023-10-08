@@ -1,9 +1,24 @@
 import { Box, FlexBox, Grid, Block, Text } from '@veer-ui/system';
-import { TextBlock } from '@veer-ui/blocks';
+import { BioBlock, TextBlock } from '@veer-ui/blocks';
 
 export default function Page(): JSX.Element {
   return (
     <Box>
+      <BioBlock
+        bios={[
+          {
+            title: 'Test Name',
+            subtitle: 'CEO',
+            body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+            imageComponent: <img src="https://picsum.photos/282" />,
+          },
+          {
+            title: 'Test Name',
+            body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+            imageComponent: <img src="https://picsum.photos/501/282" />,
+          },
+        ]}
+      />
       <Block backgroundColor="primary.50" justifyContent="center" fullHeight>
         <FlexBox alignItems="center" justifyContent="center">
           <Box>
