@@ -1,5 +1,14 @@
 # @veer/themes
 
+## 0.4.1
+
+### Patch Changes
+
+- c92166e: fix changeset config
+- Updated dependencies [c92166e]
+  - @veer-ui/blocks@0.4.1
+  - @veer-ui/system@0.4.1
+
 ## 0.4.0
 
 ### Minor Changes
