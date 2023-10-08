@@ -71,6 +71,7 @@ export const className = styleVariants({
   bodyXL: {
     color: vars.textColor,
     fontSize: vars.typography.fontSize.bodyLG,
+    lineHeight: vars.typography.lineHeight.bodyLG,
     fontWeight: vars.typography.fontWeight.normal,
 
     '@media': {
