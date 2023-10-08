@@ -1,5 +1,11 @@
 # @veer/system
 
+## 0.4.2
+
+### Patch Changes
+
+- d3123ea: fix background color of block
+
 ## 0.4.1
 
 ### Patch Changes
