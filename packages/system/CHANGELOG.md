@@ -1,5 +1,11 @@
 # @veer/system
 
+## 0.4.1
+
+### Patch Changes
+
+- c92166e: fix changeset config
+
 ## 0.4.0
 
 ### Minor Changes
