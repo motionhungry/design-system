@@ -4,7 +4,7 @@ import {
   globalStyle,
 } from '@vanilla-extract/css';
 import { themeVars, globalVars } from '@veer-ui/system/contract.css';
-import { bioBlock } from '@veer-ui/blocks/style.css';
+import { bioBlock, cardBlock } from '@veer-ui/blocks/style.css';
 import { defaultTokens, defaultGlobalTokens } from '@/tokens';
 
 export const globalTheme = createGlobalTheme(':root', globalVars, {
@@ -102,4 +102,8 @@ globalStyle(`${bioBlock} h3`, {
 
 globalStyle(`${bioBlock} h4`, {
   color: themeVars.textColor,
+});
+
+globalStyle(`${cardBlock} h5`, {
+  color: globalVars.palette['secondary.700'],
 });

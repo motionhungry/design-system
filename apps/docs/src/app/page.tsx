@@ -1,5 +1,5 @@
 import { Box, FlexBox, Grid, Block, Text } from '@veer-ui/system';
-import { BioBlock, TextBlock } from '@veer-ui/blocks';
+import { BioBlock, CardBlock, TextBlock } from '@veer-ui/blocks';
 import { darkTheme, lightTheme } from '@veer-ui/themes/imajineer.css';
 
 const className = true ? darkTheme : lightTheme;
@@ -7,6 +7,38 @@ const className = true ? darkTheme : lightTheme;
 export default function Page(): JSX.Element {
   return (
     <Box>
+      <Box>
+        <CardBlock
+          heading="Our Services"
+          cards={[
+            {
+              body: 'Some text goes here',
+              imageComponent: <img src="https://picsum.photos/100" />,
+              title: 'Title',
+            },
+            {
+              body: 'Some text goes here',
+              imageComponent: <img src="https://picsum.photos/100" />,
+              title: 'Title',
+            },
+            {
+              body: 'Some text goes here',
+              imageComponent: <img src="https://picsum.photos/100" />,
+              title: 'Title',
+            },
+            {
+              body: 'Some text goes here',
+              imageComponent: <img src="https://picsum.photos/100" />,
+              title: 'Title',
+            },
+            {
+              body: 'Some text goes here',
+              imageComponent: <img src="https://picsum.photos/100" />,
+              title: 'Title',
+            },
+          ]}
+        />
+      </Box>
       <Box className={className}>
         <Block
           backgroundVideoSrc="http://localhost:6006/videos/lightning.mp4"
@@ -27,6 +59,7 @@ export default function Page(): JSX.Element {
         <TextBlock
           heading="Text Block"
           body="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          variant="bodyLG"
         />
       </Box>
       <Box className={className}>

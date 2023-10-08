@@ -2,6 +2,7 @@ import { Box, FlexBox, Block, Text } from '@veer-ui/system';
 import { bioBlock, bioBlockRow, photoCol } from './BioBlock.styles.css';
 
 type BioBlock = {
+  heading?: string;
   bios: {
     title: string;
     subtitle?: string;
@@ -10,10 +11,10 @@ type BioBlock = {
   }[];
 };
 
-export const BioBlock = ({ bios }: BioBlock) => {
+export const BioBlock = ({ bios, heading }: BioBlock) => {
   return (
     <section className={bioBlock}>
-      <Block heading="About">
+      <Block heading={heading}>
         <Box>
           {bios.map((bio) => (
             <FlexBox className={bioBlockRow}>

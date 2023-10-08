@@ -1,24 +1,26 @@
-import { Text } from '@veer-ui/system';
-import { CardBase } from './CardBase';
+import { Box, Text } from '@veer-ui/system';
+import { featureCard, featureCardPhoto } from './FeatureCard.styles.css';
 
-type FeatureCardProps = {
-  alignment?: 'center' | 'left';
+export type FeatureCardProps = {
   imageComponent: React.ReactNode;
   title: string;
   body: string;
 };
 
 export const FeatureCard = ({
-  alignment,
   body,
   imageComponent,
   title,
 }: FeatureCardProps) => {
   return (
-    <CardBase alignment={alignment}>
-      {imageComponent}
-      <Text variant="h3">{title}</Text>
-      <Text as="p">{body}</Text>
-    </CardBase>
+    <Box className={featureCard}>
+      <Box className={featureCardPhoto}>{imageComponent}</Box>
+      <Text variant="h5">{title}</Text>
+      <Box>
+        <Text as="p" variant="bodyXS">
+          {body}
+        </Text>
+      </Box>
+    </Box>
   );
 };
