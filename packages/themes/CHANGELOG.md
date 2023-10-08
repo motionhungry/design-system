@@ -1,5 +1,15 @@
 # @veer/themes
 
+## 0.4.5
+
+### Patch Changes
+
+- cb83057: Add variants to TextBlock, add CardBlock component
+- Updated dependencies [202a104]
+- Updated dependencies [cb83057]
+  - @veer-ui/blocks@0.4.5
+  - @veer-ui/system@0.4.4
+
 ## 0.4.4
 
 ### Patch Changes

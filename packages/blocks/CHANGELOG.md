@@ -1,5 +1,14 @@
 # @veer-ui/blocks
 
+## 0.4.5
+
+### Patch Changes
+
+- 202a104: fix text block
+- cb83057: Add variants to TextBlock, add CardBlock component
+- Updated dependencies [cb83057]
+  - @veer-ui/system@0.4.4
+
 ## 0.4.4
 
 ### Patch Changes

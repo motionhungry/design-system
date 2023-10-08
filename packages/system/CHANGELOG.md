@@ -1,5 +1,11 @@
 # @veer/system
 
+## 0.4.4
+
+### Patch Changes
+
+- cb83057: Add variants to TextBlock, add CardBlock component
+
 ## 0.4.3
 
 ### Patch Changes
