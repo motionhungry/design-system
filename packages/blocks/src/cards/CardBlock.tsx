@@ -1,4 +1,4 @@
-import { Block, Box, FlexBox } from '@veer-ui/system';
+import { Block, FlexBox } from '@veer-ui/system';
 import { FeatureCard } from './FeatureCard';
 import type { FeatureCardProps } from './FeatureCard';
 import { cardBlock, container } from './CardBlock.styles.css';
