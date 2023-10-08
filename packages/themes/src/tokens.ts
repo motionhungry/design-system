@@ -108,6 +108,8 @@ export const defaultPalette = {
 const shadowColor = '0deg 0% 0%';
 
 export const defaultTokens = {
+  headingColor: defaultPalette['black'],
+  textColor: defaultPalette['black'],
   components: {
     button: {
       primary: {

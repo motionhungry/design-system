@@ -1,6 +1,12 @@
 import '@veer-ui/themes/reset.css';
-import { darkTheme } from '@veer-ui/themes/default.css';
+import { lightTheme } from '@veer-ui/themes/imajineer.css';
 import localFont from 'next/font/local';
+import { Montserrat } from 'next/font/google';
+
+const montserrat = Montserrat({
+  subsets: ['latin'],
+  variable: '--font-montserrat',
+});
 
 const gotham = localFont({
   src: [
@@ -24,7 +30,9 @@ export default function RootLayout({
 }): JSX.Element {
   return (
     <html lang="en">
-      <body className={`${gotham.className} ${darkTheme}`}>{children}</body>
+      <body className={`${montserrat.className} ${lightTheme}`}>
+        {children}
+      </body>
     </html>
   );
 }
