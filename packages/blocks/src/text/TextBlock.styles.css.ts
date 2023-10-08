@@ -1,3 +1,3 @@
 import { style } from '@vanilla-extract/css';
 
-const textBlock = style({});
+export const textBlock = style({});
