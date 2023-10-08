@@ -9,8 +9,8 @@ export default function Page(): JSX.Element {
     <Box>
       <Box className={className}>
         <Block
-          //backgroundVideoSrc="http://localhost:6006/videos/lightning.mp4"
-          //backgroundImageSrc="http://localhost:6006/images/waterfall.jpg"
+          backgroundVideoSrc="http://localhost:6006/videos/lightning.mp4"
+          backgroundImageSrc="http://localhost:6006/images/waterfall.jpg"
           justifyContent="center"
           fullHeight
         >
