@@ -1,5 +1,12 @@
 # @veer-ui/blocks
 
+## 0.4.3
+
+### Patch Changes
+
+- Updated dependencies [d3123ea]
+  - @veer-ui/system@0.4.2
+
 ## 0.4.2
 
 ### Patch Changes
