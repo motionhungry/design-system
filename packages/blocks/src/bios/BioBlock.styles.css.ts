@@ -38,12 +38,12 @@ export const photoCol = style({});
 
 globalStyle(`${photoCol} img`, {
   maxWidth: '100%',
-  maxHeight: 'auto',
+  height: 'auto',
 
   '@media': {
     [`screen and (min-width: ${screenSizes.tablet})`]: {
       maxWidth: 'none',
-      maxHeight: 'none',
+      height: 'auto',
     },
   },
 });
