@@ -1,5 +1,11 @@
 # @veer/system
 
+## 0.4.3
+
+### Patch Changes
+
+- 95bf3b1: fix z-index
+
 ## 0.4.2
 
 ### Patch Changes
