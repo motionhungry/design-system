@@ -37,7 +37,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.CI_PERSONAL_ACCESS_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_PUBLISH_TOKEN }}
 
-  update-dev:
+  update-next:
     if: ${{ github.ref == 'refs/heads/master' }}
     needs: [publish]
     name: Update next
@@ -52,5 +52,5 @@ jobs:
 
       - name: Back-merge master into next
         run: |
-          git merge -f --ff-only origin/master
+          git merge --ff-only origin/master
           git push
