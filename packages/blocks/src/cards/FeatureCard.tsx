@@ -5,15 +5,17 @@ export type FeatureCardProps = {
   imageComponent: React.ReactNode;
   title: string;
   body: string;
+  cardLayout: keyof typeof featureCard;
 };
 
 export const FeatureCard = ({
   body,
+  cardLayout,
   imageComponent,
   title,
 }: FeatureCardProps) => {
   return (
-    <Box className={featureCard}>
+    <Box className={featureCard[cardLayout]}>
       <Box className={featureCardPhoto}>{imageComponent}</Box>
       <Text variant="h5">{title}</Text>
       <Box>

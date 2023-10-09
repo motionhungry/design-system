@@ -31,11 +31,21 @@ export default function Page(): JSX.Element {
               imageComponent: <img src="https://picsum.photos/100" />,
               title: 'Title',
             },
+            /*{
+              body: 'Some text goes here',
+              imageComponent: <img src="https://picsum.photos/100" />,
+              title: 'Title',
+            },
             {
               body: 'Some text goes here',
               imageComponent: <img src="https://picsum.photos/100" />,
               title: 'Title',
             },
+            {
+              body: 'Some text goes here',
+              imageComponent: <img src="https://picsum.photos/100" />,
+              title: 'Title',
+            },*/
           ]}
         />
       </Box>
