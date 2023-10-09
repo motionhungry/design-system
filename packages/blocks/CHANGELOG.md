@@ -1,5 +1,11 @@
 # @veer-ui/blocks
 
+## 0.5.0
+
+### Minor Changes
+
+- 90f56d5: added StatCardBlock component
+
 ## 0.4.6
 
 ### Patch Changes
