@@ -1,5 +1,10 @@
 import { Box, FlexBox, Grid, Block, Text } from '@veer-ui/system';
-import { BioBlock, CardBlock, TextBlock } from '@veer-ui/blocks';
+import {
+  BioBlock,
+  FeatureCardBlock,
+  StatCardBlock,
+  TextBlock,
+} from '@veer-ui/blocks';
 import { darkTheme, lightTheme } from '@veer-ui/themes/imajineer.css';
 
 const className = true ? darkTheme : lightTheme;
@@ -7,9 +12,34 @@ const className = true ? darkTheme : lightTheme;
 export default function Page(): JSX.Element {
   return (
     <Box>
-      <Box>
-        <CardBlock
-          heading="Our Services"
+      <Box className={className}>
+        <StatCardBlock
+          heading="Stat Cards"
+          cards={[
+            {
+              body: 'Some text goes here',
+              value: 1000,
+              title: 'Title',
+            },
+            {
+              body: 'Some text goes here',
+              value: 1.5,
+              prefix: '$',
+              suffix: 'M',
+              title: 'Title',
+            },
+            {
+              body: 'Some text goes here',
+              value: 20,
+              suffix: '%',
+              title: 'Title',
+            },
+          ]}
+        />
+      </Box>
+      <Box className={className}>
+        <FeatureCardBlock
+          heading="Feature Cards"
           cards={[
             {
               body: 'Some text goes here',

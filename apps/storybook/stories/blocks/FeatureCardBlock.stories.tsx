@@ -1,9 +1,9 @@
-import { CardBlock } from '@veer-ui/blocks';
+import { FeatureCardBlock } from '@veer-ui/blocks';
 import type { Meta, StoryObj } from '@storybook/react';
 
-const meta: Meta<typeof CardBlock> = {
-  title: 'blocks/CardBlock',
-  component: CardBlock,
+const meta: Meta<typeof FeatureCardBlock> = {
+  title: 'blocks/FeatureCardBlock',
+  component: FeatureCardBlock,
   tags: ['autodocs'],
   argTypes: {
     cards: { control: false },
@@ -18,7 +18,6 @@ const getCards = (count: number) =>
   Array(count)
     .fill(null)
     .map((item, index) => ({
-      alignment: 'left',
       body: 'Some text goes here',
       imageComponent: <img src="https://picsum.photos/100" />,
       title: 'Title',

@@ -10,7 +10,7 @@ export const base = style({
   paddingRight: vars.space.sm,
 });
 
-export const featureCard = styleVariants({
+export const card = styleVariants({
   small: [
     base,
     {
@@ -49,3 +49,5 @@ export const featureCard = styleVariants({
 export const featureCardPhoto = style({
   paddingBottom: vars.space.xs,
 });
+
+export const statCardValue = style({});
