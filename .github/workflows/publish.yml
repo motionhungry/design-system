@@ -40,17 +40,17 @@ jobs:
   update-dev:
     if: ${{ github.ref == 'refs/heads/master' }}
     needs: [publish]
-    name: Update dev
+    name: Update next
     runs-on: ubuntu-latest
     steps:
       - name: Check out
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
-          ref: 'dev'
+          ref: 'next'
           token: ${{ secrets.CI_PERSONAL_ACCESS_TOKEN }}
 
-      - name: Back-merge master into dev
+      - name: Back-merge master into next
         run: |
           git merge -f --ff-only origin/master
           git push
