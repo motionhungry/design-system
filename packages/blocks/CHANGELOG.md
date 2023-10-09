@@ -1,5 +1,11 @@
 # @veer-ui/blocks
 
+## 0.4.6
+
+### Patch Changes
+
+- de338be: fix feature card layout to be more responsive
+
 ## 0.4.5
 
 ### Patch Changes
