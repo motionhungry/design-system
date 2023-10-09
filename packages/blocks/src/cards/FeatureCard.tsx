@@ -1,11 +1,11 @@
 import { Box, Text } from '@veer-ui/system';
-import { featureCard, featureCardPhoto } from './FeatureCard.styles.css';
+import { card, featureCardPhoto } from './Card.styles.css';
 
 export type FeatureCardProps = {
   imageComponent: React.ReactNode;
   title: string;
   body: string;
-  cardLayout: keyof typeof featureCard;
+  cardLayout: keyof typeof card;
 };
 
 export const FeatureCard = ({
@@ -15,7 +15,7 @@ export const FeatureCard = ({
   title,
 }: FeatureCardProps) => {
   return (
-    <Box className={featureCard[cardLayout]}>
+    <Box className={card[cardLayout]}>
       <Box className={featureCardPhoto}>{imageComponent}</Box>
       <Text variant="h5">{title}</Text>
       <Box>
