@@ -1,5 +1,16 @@
 # @veer-ui/blocks
 
+## 0.6.0
+
+### Minor Changes
+
+- e96c372: Add Contact Form
+
+### Patch Changes
+
+- Updated dependencies [e96c372]
+  - @veer-ui/system@0.5.0
+
 ## 0.5.0
 
 ### Minor Changes
