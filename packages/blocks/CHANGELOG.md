@@ -1,5 +1,11 @@
 # @veer-ui/blocks
 
+## 0.6.1
+
+### Patch Changes
+
+- 54a616b: fix contact form fields
+
 ## 0.6.0
 
 ### Minor Changes
