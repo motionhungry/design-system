@@ -16,22 +16,22 @@ export default function Page(): JSX.Element {
       <Box className={className}>
         <ContactFormContainer
           heading="Contact Us"
-          namePlaceholder="Name 1"
-          commentsPlaceholder="Comments 5"
-          emailPlaceholder="Email 3"
-          phonePlaceholder="Phone Number 4"
-          companyNamePlaceholder="Company 2"
+          placeholderName="Name 1"
+          placeholderComments="Comments 5"
+          placeholderEmail="Email 3"
+          placeholderPhone="Phone Number 4"
+          placeholderCompany="Company 2"
           successHeading="Thank you"
           successBody="We have received your message."
           formHeading="Send Us a Message"
           formBody="Send us a message to learn how we can help you with your next project."
           officeHeading="Our Office"
-          officeCompanyName="Company Name"
+          officeCompany="Company Name"
           officeAddress="1234 Fifth St."
           officeEmail="social@imajineer.io"
           officePhone="+855 55 123 456"
-          submitButtonText="Send"
-          submitButtonTextActive="Sending..."
+          buttonLabel="Send"
+          buttonLabelSubmitting="Sending..."
         />
       </Box>
       <Box className={className}>
