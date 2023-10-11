@@ -6,12 +6,34 @@ import {
   TextBlock,
 } from '@veer-ui/blocks';
 import { darkTheme, lightTheme } from '@veer-ui/themes/imajineer.css';
+import { ContactFormContainer } from './ContactFormContainer';
 
 const className = true ? darkTheme : lightTheme;
 
 export default function Page(): JSX.Element {
   return (
     <Box>
+      <Box className={className}>
+        <ContactFormContainer
+          heading="Contact Us"
+          namePlaceholder="Name 1"
+          commentsPlaceholder="Comments 5"
+          emailPlaceholder="Email 3"
+          phonePlaceholder="Phone Number 4"
+          companyNamePlaceholder="Company 2"
+          successHeading="Thank you"
+          successBody="We have received your message."
+          formHeading="Send Us a Message"
+          formBody="Send us a message to learn how we can help you with your next project."
+          officeHeading="Our Office"
+          officeCompanyName="Company Name"
+          officeAddress="1234 Fifth St."
+          officeEmail="social@imajineer.io"
+          officePhone="+855 55 123 456"
+          submitButtonText="Send"
+          submitButtonTextActive="Sending..."
+        />
+      </Box>
       <Box className={className}>
         <StatCardBlock
           heading="Stat Cards"
