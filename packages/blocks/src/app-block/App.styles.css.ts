@@ -7,7 +7,7 @@ export const containerClass = style({
 
 export const menuContainerClass = style({
   position: 'absolute',
-  right: vars.space.lg,
+  left: vars.space.lg,
   top: vars.space.lg,
   bottom: 0,
 });
