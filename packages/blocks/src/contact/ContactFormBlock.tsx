@@ -21,44 +21,44 @@ export type ContactFormInput = {
 
 export type ContactFormBlockProps = {
   heading?: string;
-  namePlaceholder: string;
-  companyNamePlaceholder: string;
-  emailPlaceholder: string;
-  phonePlaceholder: string;
-  commentsPlaceholder: string;
+  placeholderName: string;
+  placeholderCompany: string;
+  placeholderEmail: string;
+  placeholderPhone: string;
+  placeholderComments: string;
   successHeading: string;
   successBody: string | null;
   formHeading: string;
   formBody: string;
-  officeCompanyName: string;
+  officeCompany: string;
   officeHeading: string;
   officeAddress: string;
   officePhone: string;
   officeEmail: string;
-  submitButtonText: string | null;
-  submitButtonTextActive: string | null;
+  buttonLabel: string | null;
+  buttonLabelSubmitting: string | null;
   onSubmit: (data: ContactFormInput) => Promise<void>;
 };
 
 export const ContactFormBlock = ({
   heading,
-  namePlaceholder = 'Name',
-  companyNamePlaceholder = 'Company Name',
-  emailPlaceholder = 'Email',
-  phonePlaceholder = 'Phone',
-  commentsPlaceholder = 'Comments',
+  placeholderName = 'Name',
+  placeholderCompany = 'Company Name',
+  placeholderEmail = 'Email',
+  placeholderPhone = 'Phone',
+  placeholderComments = 'Comments',
   onSubmit: fwdOnSubmit,
   successHeading,
   successBody,
   formHeading,
   formBody,
-  officeCompanyName,
+  officeCompany,
   officeAddress,
   officePhone,
   officeEmail,
   officeHeading,
-  submitButtonText,
-  submitButtonTextActive,
+  buttonLabel,
+  buttonLabelSubmitting,
 }: ContactFormBlockProps): JSX.Element => {
   const {
     register,
@@ -79,9 +79,9 @@ export const ContactFormBlock = ({
     }
   };
 
-  const buttonText = isSubmitting
-    ? submitButtonTextActive ?? 'Submitting...'
-    : submitButtonText ?? 'Submit';
+  const submitButtonLabel = isSubmitting
+    ? buttonLabelSubmitting ?? 'Submitting...'
+    : buttonLabel ?? 'Submit';
 
   return (
     <section className={contactForm}>
@@ -115,14 +115,14 @@ export const ContactFormBlock = ({
                 <Box pb="sm">
                   <input
                     className={input}
-                    placeholder={`${namePlaceholder}*`}
+                    placeholder={`${placeholderName}*`}
                     {...register('name', { required: true, maxLength: 50 })}
                   />
                 </Box>
                 <Box pb="sm">
                   <input
                     className={input}
-                    placeholder={`${companyNamePlaceholder}*`}
+                    placeholder={`${placeholderCompany}*`}
                     {...register('companyName', {
                       required: true,
                       maxLength: 50,
@@ -132,7 +132,7 @@ export const ContactFormBlock = ({
                 <Box pb="sm">
                   <input
                     className={input}
-                    placeholder={`${emailPlaceholder}*`}
+                    placeholder={`${placeholderEmail}*`}
                     {...register('email', {
                       required: true,
                       maxLength: 100,
@@ -144,14 +144,14 @@ export const ContactFormBlock = ({
                 <Box pb="sm">
                   <input
                     className={input}
-                    placeholder={phonePlaceholder}
+                    placeholder={placeholderPhone}
                     {...register('phone', { required: true, maxLength: 15 })}
                   />
                 </Box>
                 <Box pb="sm">
                   <textarea
                     className={input}
-                    placeholder={`${commentsPlaceholder}*`}
+                    placeholder={`${placeholderComments}*`}
                     rows={5}
                     {...register('comments', {
                       required: true,
@@ -164,7 +164,7 @@ export const ContactFormBlock = ({
                     className={button}
                     type="submit"
                     disabled={isSubmitting}
-                    value={buttonText}
+                    value={submitButtonLabel}
                   />
                 </Box>
               </form>
@@ -174,7 +174,7 @@ export const ContactFormBlock = ({
             <Box pb="md">
               <Text variant="h4">{officeHeading}</Text>
             </Box>
-            <Text variant="h5">{officeCompanyName}</Text>
+            <Text variant="h5">{officeCompany}</Text>
             <Box pb="md">
               <Text variant="bodyXS">{officeAddress}</Text>
             </Box>
