@@ -83,13 +83,72 @@ export const lightTheme = createTheme(themeVars, {
   ...defaultTokens,
   headingColor: globalVars.palette['primary.600'],
   textColor: globalVars.palette['neutral.950'],
+  input: {
+    ...defaultTokens.input,
+    borderColor: globalVars.palette['neutral.950'],
+    color: globalVars.palette['neutral.950'],
+  },
+  button: {
+    ...defaultTokens.button,
+    default: {
+      backgroundColor: globalVars.palette['secondary.700'],
+      borderColor: 'transparent',
+      color: globalVars.palette.white,
+    },
+    active: {
+      backgroundColor: globalVars.palette['secondary.800'],
+      borderColor: 'transparent',
+      color: globalVars.palette.white,
+    },
+    disabled: {
+      backgroundColor: globalVars.palette['neutral.400'],
+      borderColor: 'transparent',
+      color: globalVars.palette['neutral.100'],
+    },
+    hover: {
+      backgroundColor: globalVars.palette['secondary.600'],
+      borderColor: 'transparent',
+      color: globalVars.palette.white,
+    },
+  },
 });
 
 export const darkTheme = createTheme(themeVars, {
   ...defaultTokens,
   backgroundColor: globalVars.palette['neutral.950'],
   headingColor: globalVars.palette['primary.500'],
-  textColor: globalVars.palette['white'],
+  textColor: globalVars.palette.white,
+  input: {
+    ...defaultTokens.input,
+    backgroundColor: globalVars.palette['neutral.900'],
+    borderColor: globalVars.palette['neutral.700'],
+    borderColorFocus: globalVars.palette.white,
+    color: globalVars.palette.white,
+    placeholderColor: globalVars.palette['neutral.500'],
+  },
+  button: {
+    ...defaultTokens.button,
+    default: {
+      backgroundColor: globalVars.palette['secondary.700'],
+      borderColor: 'transparent',
+      color: globalVars.palette.white,
+    },
+    active: {
+      backgroundColor: globalVars.palette['secondary.800'],
+      borderColor: 'transparent',
+      color: globalVars.palette.white,
+    },
+    disabled: {
+      backgroundColor: globalVars.palette['neutral.400'],
+      borderColor: 'transparent',
+      color: globalVars.palette['neutral.100'],
+    },
+    hover: {
+      backgroundColor: globalVars.palette['secondary.600'],
+      borderColor: 'transparent',
+      color: globalVars.palette.white,
+    },
+  },
 });
 
 globalStyle('body', {

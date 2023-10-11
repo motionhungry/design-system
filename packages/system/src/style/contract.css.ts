@@ -110,6 +110,47 @@ export const themeVars = createThemeContract({
   backgroundColor: null,
   headingColor: null,
   textColor: null,
+  input: {
+    backgroundColor: null,
+    borderColor: null,
+    borderWidth: null,
+    borderColorFocus: null,
+    padding: null,
+    placeholderColor: null,
+    fontSize: null,
+    fontWeight: null,
+    lineHeight: null,
+    color: null,
+  },
+  button: {
+    base: {
+      borderWidth: null,
+      fontSize: null,
+      fontWeight: null,
+      lineHeight: null,
+      padding: null,
+    },
+    default: {
+      backgroundColor: null,
+      borderColor: null,
+      color: null,
+    },
+    active: {
+      backgroundColor: null,
+      borderColor: null,
+      color: null,
+    },
+    disabled: {
+      backgroundColor: null,
+      borderColor: null,
+      color: null,
+    },
+    hover: {
+      backgroundColor: null,
+      borderColor: null,
+      color: null,
+    },
+  },
   components: {
     button: {
       primary: {

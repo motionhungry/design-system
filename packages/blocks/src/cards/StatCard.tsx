@@ -22,7 +22,7 @@ export const StatCard = ({
   const valueComponent = useMemo<React.ReactNode>(() => {
     const formatted = value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
     const components = [
-      <Text as="span" variant="h2">
+      <Text as="span" variant="h1">
         {`${prefix ?? ''}${formatted}${suffix && suffix !== '%' ? suffix : ''}`}
       </Text>,
     ];
