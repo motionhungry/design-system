@@ -13,7 +13,7 @@ import {
 
 export type ContactFormInput = {
   name: string;
-  companyName: string;
+  company: string;
   email: string;
   phone: string;
   comments: string;
@@ -123,7 +123,7 @@ export const ContactFormBlock = ({
                   <input
                     className={input}
                     placeholder={`${placeholderCompany}*`}
-                    {...register('companyName', {
+                    {...register('company', {
                       required: true,
                       maxLength: 50,
                     })}
