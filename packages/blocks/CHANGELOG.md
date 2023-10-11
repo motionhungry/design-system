@@ -1,5 +1,11 @@
 # @veer-ui/blocks
 
+## 0.6.2
+
+### Patch Changes
+
+- a3240af: fix contact form fields
+
 ## 0.6.1
 
 ### Patch Changes
