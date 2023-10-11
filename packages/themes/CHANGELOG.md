@@ -1,5 +1,12 @@
 # @veer/themes
 
+## 0.5.1
+
+### Patch Changes
+
+- Updated dependencies [54a616b]
+  - @veer-ui/blocks@0.6.1
+
 ## 0.5.0
 
 ### Minor Changes
