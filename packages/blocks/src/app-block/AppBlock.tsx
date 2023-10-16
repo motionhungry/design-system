@@ -3,12 +3,12 @@
 import { Box } from '@veer-ui/system';
 import _ from 'lodash';
 import { useEffect, useRef, useState } from 'react';
-import { containerClass, menuContainerClass } from './App.styles.css';
+import { containerClass, menuContainerClass } from './AppBlock.styles.css';
 import { Menu } from './components/Menu';
 import { Screen } from './components/Screen';
-import type { AppProps } from './types';
+import type { AppBlockProps } from './types';
 
-const App = ({ screens }: AppProps): JSX.Element => {
+const AppBlock = ({ screens }: AppBlockProps): JSX.Element => {
   const refs = screens.map(() => useRef<HTMLDivElement>(null));
   const [activeIndex, setActiveIndex] = useState(0);
 
@@ -57,6 +57,6 @@ const App = ({ screens }: AppProps): JSX.Element => {
   );
 };
 
-App.displayName = 'App';
+AppBlock.displayName = 'AppBlock';
 
-export { App };
+export { AppBlock };

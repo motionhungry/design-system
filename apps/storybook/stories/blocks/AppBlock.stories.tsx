@@ -1,11 +1,11 @@
-import { App } from '@veer-ui/blocks';
+import { AppBlock } from '@veer-ui/blocks';
 import { Box, Block, Text } from '@veer-ui/system';
 import { Calendar, Lightning } from '@veer-ui/icons';
 import type { Meta, StoryObj } from '@storybook/react';
 
-const meta: Meta<typeof App> = {
-  title: 'blocks/App',
-  component: App,
+const meta: Meta<typeof AppBlock> = {
+  title: 'blocks/AppBlock',
+  component: AppBlock,
   decorators: [
     (Story) => (
       <Box>

@@ -5,6 +5,6 @@ export type Screen = {
   videoSrc?: string;
 };
 
-export type AppProps = {
+export type AppBlockProps = {
   screens: Screen[];
 };
