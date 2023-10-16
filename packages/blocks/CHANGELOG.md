@@ -1,5 +1,12 @@
 # @veer-ui/blocks
 
+## 0.6.3
+
+### Patch Changes
+
+- 6e8f36b: fix: fix import error
+- d95fa4a: Rename App to AppBlock
+
 ## 0.6.2
 
 ### Patch Changes
